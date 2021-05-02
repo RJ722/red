@@ -1,0 +1,11 @@
+<head>
+    <title> {{ .Title | title }} {{ if (not (eq .Title .Site.Title)) }} | {{ .Site.Title }} {{ end }} </title>
+    <link rel="stylesheet" href='{{ "css/blog.css" | relURL }}'>
+
+    <link rel="apple-touch-icon" sizes="180x180" href='{{ "/icons/apple-touch-icon.png" | relURL }}'>
+    <link rel="icon" type="image/png" sizes="32x32" href='{{ "/icons/favicon-32x32.png" | relURL }}'>
+    <link rel="icon" type="image/png" sizes="16x16" href='{{ "/icons/favicon-16x16.png" | relURL }}'>
+
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+</head>

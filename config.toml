@@ -1,3 +1,9 @@
-baseURL = "http://example.org/"
+theme = "xampa"
+baseURL = "https://rj722.github.io/xampa/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Rahul Jha (~RJ722) Blog"
+
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = true

@@ -1,0 +1,29 @@
+{{ define "main" }}
+  <div class="post">
+    <h1> {{ .Title }} </h1>
+    <div class="break-line"></div>
+    <div class="timestamp"> {{ .Date.Format "JANUARY 2, 2006"}} </div>
+    {{ .Content | safeHTML }}
+    <div class="post-ender">
+      <div class="tag-list">
+        <!-- TODO: Only show "TAGGED AS" if there are tags present.-->
+        TAGGED AS:
+        {{- range .Params.tags }}
+          <div class="tag">{{ . | upper }}</div>
+        {{ end }}
+      </div>
+      <div class="share">
+        <div class="share__image"> <img src='{{ "images/share-on-twitter.svg" | relURL }}'> </div>
+        <div class="share__text"> Share on Twitter </div>
+      </div>
+    </div>
+    <div class="about">
+      <div class="t2"> JOIN ME </div>
+      Hi, I'm Rahul. I write about programming, design and self-learning. If you like what I'm doing, consider subscribing to my newsletter:
+      <form action="https://rj722.github.io" class="subscribe">
+          <input type="email" class="subscribe__email" placeholder="email@example.com" />
+          <input type="submit" class="subscribe__button" title="Subscribe" value="Subscribe"/>
+      </form>
+    </div>
+  </div>
+{{ end }}

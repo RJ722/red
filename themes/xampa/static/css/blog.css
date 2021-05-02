@@ -1,0 +1,348 @@
+@font-face{
+    font-family: 'sans-serif';
+    src: url('../fonts/SourceSansPro-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: 'sans-serif';
+    src: url('../fonts/SourceSansPro-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face{
+    font-family: 'sans-serif';
+    src: url('../fonts/SourceSansPro-ExtraLight.ttf');
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: 'body';
+    src: url('../fonts/CrimsonText-Regular.ttf');
+    font-weight: normal;
+    color: #0E0F18;
+}
+
+@font-face {
+    font-family: 'body';
+    src: url('../fonts/CrimsonText-Bold.ttf');
+    font-weight: bold;
+    color: #0E0F18;
+}
+
+@font-face {
+    font-family: 'body';
+    src: url('../fonts/CrimsonText-Italic.ttf');
+    font-style: italic;
+    color: #0E0F18;
+}
+
+@font-face{
+    font-family: 'mono';
+    src: url('../fonts/SourceCodePro-SemiBold.ttf');
+}
+
+body {
+    -webkit-font-feature-settings: "kern" 1,"liga" 1,"calt" 1;
+    -moz-font-feature-settings: "kern" 1,"liga" 1,"calt" 1;
+    font-feature-settings: "kern" 1,"liga" 1,"calt" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-family: 'body';
+    font-size: 25px;
+    line-height: 130%;
+    letter-spacing: 0.005em;
+    margin: 0px;
+    padding: 0px;
+}
+
+.page {
+    width: 650px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.post {
+    width: 700px;
+    margin: 15px auto;
+}
+
+h1, h2 { margin: 1.5em 0 0.5em; }
+
+h2 {
+    font-size: 32px;
+    letter-spacing: 0.01em;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: 'sans-serif';
+    font-size: 55px;
+    font-weight: 900;
+    line-height: 130%;
+    margin: 1.5em 0 0.75em 0;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+    border-bottom: 1px dashed gray;
+}
+
+pre {
+    font-family: mono;
+    font-size: 17px;
+    display: block;
+    word-wrap: break-word;
+    page-break-inside: avoid;
+    /* margin-left: 1.5em; */
+}
+
+.full-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+blockquote {
+    font-style: italic;
+    color: #4046DB;
+    margin: 1.5em 0 0.75em 0;
+}
+
+.quote {
+    /* opacity: 70%; */
+    padding: 0.5em 1em;
+    border-left: 6px solid #4046DB;
+    /* width: 500px; */
+    border-radius: 4px;
+}
+
+cite {
+    font-style: normal;
+    text-align: right;
+    display: block;
+    font-size: 22px;
+    /* float: right; */
+}
+
+cite::before{
+    content: "— ";
+}
+
+.quote::before {
+    content: "“";
+    font-size: 72px;
+    font-style: italic;
+    opacity: 30%;
+    left: -10px;
+    top: 15px;
+    position: relative;
+}
+
+.quote::after {
+    content: "”";
+    font-size: 72px;
+    font-style: italic;
+    opacity: 30%;
+    top: 15px;
+    right: -5px;
+    position: relative;
+    text-align: right;
+    float: right;
+}
+
+.timestamp {
+    font-family: 'sans-serif';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 13px;
+    line-height: 25px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+.break-line {
+    margin-top: 1em;
+    height: 3px;
+    background: #4046DB;
+}
+
+.tag {
+    display: inline;
+    margin-left: 0.5em;
+    font-family: 'sans-serif';
+    font-style: normal;
+    font-weight: normal;
+    border-bottom: 1px dashed gray;
+    text-transform: uppercase;
+}
+
+.tag-list {
+    display: inline-block;
+}
+
+.post-ender {
+    display: block;
+    font-family: 'sans-serif';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 15px;
+    letter-spacing: -0.01em;
+    margin-top: 1.5em;
+}
+
+.share {
+    display: inline;
+    float: right;
+}
+
+.share__image {
+    display: inline-block;
+    vertical-align: sub;
+    margin-right: 0.25em;
+}
+
+.share__image img {
+    vertical-align: sub;
+}
+
+.share__text {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.menu {
+    display: table;
+    margin: 1em auto;
+    align-content: center;
+}
+
+.menu > li {
+    list-style: none;
+    margin: 0 1.25em 0 0;
+    display: inline;
+}
+
+.menu__item {
+    color: rgba(100, 100, 110, 0.5);
+    border-bottom-color: transparent;
+    text-decoration: none;
+    display: inline-block;
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.menu__item__inside {
+    border-bottom: 2px solid #4046DB;
+}
+
+.about {
+    margin: 2em auto;
+    outline: 0.5px solid rgba(64, 70, 219, 0.2);
+    padding-top: 1em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-bottom: 0.5em;
+    font-size: 22px;
+}
+
+.t2 {
+    margin: 0.5em auto;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.01em;
+}
+
+.subscribe {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 0.75em auto
+}
+
+.subscribe__email {
+    padding: 17px;
+    padding-left: 50px;
+    height: 50px;
+    width: 320px;
+    border: 0.5px solid #4046DB;
+    background-image: url('../images/mail.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    outline: 0;
+    box-sizing: border-box;
+    border-radius: 1px;
+}
+
+.subscribe input[type=email] {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+}
+
+.subscribe__button {
+    font-style: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    background: #4046DB;
+    width: 180px;
+    height: 50px;
+    border: 0.5px solid #4046DB;
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+.footer_container {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background: #F9F9FE;
+}
+
+.footer {
+    margin: auto auto;
+    width: 700px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+    color: #5E6071;
+}
+
+.footer a{
+    text-decoration: none;
+    color: unset;
+    border-bottom: 1px dashed gray;
+}
+
+.footer__copyright{
+    float: left
+}
+
+.footer__info {
+    display: inline;
+    float: right
+}

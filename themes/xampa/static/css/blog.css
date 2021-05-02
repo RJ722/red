@@ -101,6 +101,11 @@ img {
     border-bottom: 1px dashed gray;
 }
 
+.post .footnote-ref {
+    text-decoration: none;
+    border-bottom: none;
+}
+
 pre {
     font-family: mono;
     font-size: 17px;

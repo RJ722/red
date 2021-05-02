@@ -3,6 +3,8 @@ baseURL = "https://rj722.github.io/xampa/"
 languageCode = "en-us"
 title = "Rahul Jha (~RJ722) Blog"
 
+pygmentsUseClasses=true
+
 [markup]
     [markup.goldmark]
         [markup.goldmark.renderer]

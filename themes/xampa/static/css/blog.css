@@ -58,13 +58,12 @@ body {
 }
 
 .page {
-    width: 650px;
+    width: 700px;
     margin: 0 auto;
     padding: 0;
 }
 
 .post {
-    width: 700px;
     margin: 15px auto;
 }
 
@@ -97,7 +96,7 @@ img {
     margin-right: auto;
 }
 
-a {
+.post a {
     text-decoration: none;
     border-bottom: 1px dashed gray;
 }
@@ -191,12 +190,15 @@ cite::before{
     font-family: 'sans-serif';
     font-style: normal;
     font-weight: normal;
-    border-bottom: 1px dashed gray;
     text-transform: uppercase;
 }
 
 .tag-list {
     display: inline-block;
+}
+
+.tag-list a {
+    color: inherit;
 }
 
 .post-ender {
@@ -316,23 +318,24 @@ cite::before{
     cursor: pointer;
 }
 
-.footer_container {
+footer {
     display: flex;
     height: 80px;
     width: 100%;
-    background: #F9F9FE;
+    /* background: #F9F9FE; */
 }
 
-.footer {
+footer div {
+    flex-direction: column;
     margin: auto auto;
-    width: 700px;
+    /* width: 100%; */
     font-family: sans-serif;
     font-weight: lighter;
     font-size: 15px;
     color: #5E6071;
 }
 
-.footer a{
+footer a{
     text-decoration: none;
     color: unset;
     border-bottom: 1px dashed gray;

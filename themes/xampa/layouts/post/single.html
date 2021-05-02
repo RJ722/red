@@ -9,7 +9,7 @@
         <!-- TODO: Only show "TAGGED AS" if there are tags present.-->
         TAGGED AS:
         {{- range .Params.tags }}
-          <div class="tag">{{ . | upper }}</div>
+          <div class="tag"><a href='{{ add "tags/" . | relURL }}'>{{ . | upper }}</a></div>
         {{ end }}
       </div>
       <div class="share">

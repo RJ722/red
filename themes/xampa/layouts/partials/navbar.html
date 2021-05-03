@@ -1,6 +1,6 @@
 <ul class="menu">
     <li>
-        <a class='menu__item {{ if not .Section }}menu__item__inside{{ end }}' href='{{ "/" | relURL }}'>who?</a>
+        <a class='menu__item {{ if not .Section }}menu__item__inside{{ end }}' href='{{ "/" | relURL }}'>about</a>
     </li>
     <li>
         <a class='menu__item {{ if eq .Section "blog" }}menu__item__inside{{ end }}' href='{{ "blog/" | relURL }}'>blog</a>

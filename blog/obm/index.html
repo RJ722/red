@@ -1,0 +1,67 @@
+<!doctype html><html><head><title>Operation Blue Moon | Rahul Jha (~RJ722) Blog</title><link rel=stylesheet href=/xampa/css/blog.css><link rel=stylesheet href=/xampa/css/syntax.css><link rel=apple-touch-icon sizes=180x180 href=/xampa/icons/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/xampa/icons/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/xampa/icons/favicon-16x16.png><meta charset=utf-8><meta content="utf-8" http-equiv=encoding></head><body><div class=page><ul class=menu><li><a class=menu__item href=/xampa/>about</a></li><li><a class="menu__item menu__item__inside" href=/xampa/blog/>blog</a></li><li><a class=menu__item href=/xampa/etc>etc</a></li></ul><div id=content><div class=post><h1>Operation Blue Moon</h1><div class=break-line></div><div class=timestamp>JANUARY 12, 2019</div><p>It&rsquo;s been a couple of years since I read <a href=http://www.shakthimaan.com/what-to-do.html>&ldquo;i want 2 do project tell me wat 2
+do&rdquo;</a>, which then landed me on the home page of <a href=https://gitlab.com/shakthimaan/operation-blue-moon/>Operation Blue Moon
+(OBM)</a>, a project run single-handedly by the author of the book - <a href=http://shakthimaan.com/>Shakthi
+Kannan (mbuf)</a>. It is aimed towards time management and getting things
+done.</p><p>The project not only borrows it&rsquo;s name, but also the spirit of discipline, from
+our miliary counterparts. The practices here, built upon Shakthi&rsquo;s years of
+experience of dealing with people trying, and failing, and learning from their
+mistakes, regarding time management.</p><p>OBM, at it&rsquo;s core, provides one with a framework (the ability to define WHY, WHAT,
+WHEN and HOW) to align their thoughts, expectations and action practically,
+along with the ability to monitor your success. How does it do so? Read on.</p><blockquote><div class=quote>It&rsquo;s difficult. It&rsquo;s this difficulty that creates the scarcity and you, the winner.</div></blockquote><p>Every participant of OBM has a <code>plan</code><sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup> (an emacs org file), which enlists
+their goals - long term, short term, secondary, etc. - all goals - The WHAT.</p><p>Then, under each subsequent heading, define what tasks do you need to do in
+order to achieve that goal - The HOW. The tasks have the following properties:</p><pre><code>*** TODO Write one blog post
+    :PROPERTIES:
+    :ESTIMATED: 3
+    :ACTUAL:
+    :OWNER: RJ722
+    :ID: WRITE.1562247371
+    :TASKID: WRITE.1562247371
+    :END:
+</code></pre><p><code>ESTIMATED</code> - The time you estimate you would take for completing the task.</p><p><code>ACTUAL</code> - The actual amount it takes for you to complete it.</p><p><code>OWNER</code>, <code>ID</code> and <code>TASKID</code> are there for better visualizations. (more on this
+later)</p><p>I&rsquo;ve the following function (courtesy of <a href=http://shakthimaan.com/>mbuf</a>) in my
+<a href=http://spacemacs.org/>spacemacs</a> config to help me generate these tasks:</p><div class=highlight><pre class=chroma><code class=language-lisp data-lang=lisp><span class=p>(</span><span class=nv>define-skeleton</span> <span class=nv>insert-org-entry</span>
+  <span class=s>&#34;Prompt for task, estimate and category&#34;</span>
+  <span class=no>nil</span>
+  <span class=o>&#39;</span><span class=p>(</span><span class=k>setq</span> <span class=nv>task</span>  <span class=p>(</span><span class=nv>skeleton-read</span> <span class=s>&#34;Task: &#34;</span><span class=p>))</span>
+  <span class=o>&#39;</span><span class=p>(</span><span class=k>setq</span> <span class=nv>estimate</span>  <span class=p>(</span><span class=nv>skeleton-read</span> <span class=s>&#34;Estimate: &#34;</span><span class=p>))</span>
+  <span class=o>&#39;</span><span class=p>(</span><span class=k>setq</span> <span class=nv>category</span> <span class=p>(</span><span class=nv>skeleton-read</span> <span class=s>&#34;Category: &#34;</span><span class=p>))</span>
+  <span class=o>&#39;</span><span class=p>(</span><span class=k>setq</span> <span class=nv>timestamp</span> <span class=p>(</span><span class=nv>format-time-string</span> <span class=s>&#34;%s&#34;</span><span class=p>))</span>
+  <span class=s>&#34;*** TODO &#34;</span> <span class=nv>task</span> <span class=nv>\n</span>
+  <span class=s>&#34;:PROPERTIES:&#34;</span> <span class=nv>\n</span>
+  <span class=s>&#34;:ESTIMATED: &#34;</span> <span class=nv>estimate</span> <span class=nv>\n</span>
+  <span class=s>&#34;:ACTUAL:&#34;</span> <span class=nv>\n</span>
+  <span class=s>&#34;:OWNER: RJ722&#34;</span> <span class=nv>\n</span>
+  <span class=s>&#34;:ID: &#34;</span> <span class=nv>category</span> <span class=s>&#34;.&#34;</span> <span class=nv>timestamp</span> <span class=nv>\n</span>
+  <span class=s>&#34;:TASKID: &#34;</span> <span class=nv>category</span> <span class=s>&#34;.&#34;</span> <span class=nv>timestamp</span> <span class=nv>\n</span>
+  <span class=s>&#34;:END:&#34;</span><span class=p>)</span>
+</code></pre></div><p>The more important question is WHEN. Here&rsquo;s where the &lsquo;sprints&rsquo; chime-in. If
+you&rsquo;re participating in OBM, you&rsquo;re always sprinting (which makes perfect sense,
+since ideally you wouldn&rsquo;t want yourself &lsquo;unmanaging&rsquo; your time). A sprint,
+generally lasts for around 14-18 days. Before the sprint starts, move the tasks
+you want to get done in that sprint, under it&rsquo;s &lsquo;tab&rsquo; (which exists in the plan
+file, <a href=https://gitlab.com/shakthimaan/operation-blue-moon/blob/master/plan/data-scientist/RJ722.org>an example here</a>). You also need to enter an average amount
+of time you can dedicate on a per day basis for this sprint.</p><p>Shakthi would then move such tasks from all participants to a file dedicated to
+that sprint. The participants can now clock their tasks (track the amount of
+time they have spend doing each of these tasks) - in emacs' org mode
+(<code>org-clock-in</code>, <code>org-clock-out</code>).</p><p>If you have done everything until now correctly, you should have a holistic view
+of how well your performance was for the last sprint. And, <em>this</em> is the most
+important step. Introspection - See what you did you wrong, what factor did you
+forget to take into account - how much was the difference between the actual and
+expected time of completion. Were you not able to complete all the tasks - why?
+what could you do to improve your estimates?</p><p>You don&rsquo;t even have to do this formally (although, it helps). Just doing the
+work, clocking it, and sending it over is enough to spark an introspective
+impulse. Just stick with the plan long enough and you&rsquo;d see improvements. You&rsquo;d
+see major improvements. I want to attribute the reason for OBM&rsquo;s success to
+it&rsquo;s simplicity, but it really is the discipline, showing up everyday and doing
+the work.</p><p>If you currently find yourself in a position, where it feels like you&rsquo;re stuck -
+you know what you want to do, but there&rsquo;s this &lsquo;something&rsquo; stopping you, and it
+feels forever since you&rsquo;ve been wanting to do this thing, but there&rsquo;s been no
+tangible progress so far. Well, then OBM is exactly the right thing for you.
+With this framework, you&rsquo;re forced to formalize things, diagnose the &lsquo;something&rsquo;
+stopping you, make changes to your current schedule and to see the different
+between the direction you aim to go towards and the one where you&rsquo;re heading
+(with your current planning).</p><p>Lastly, I want to thank <a href=http://shakthimaan.com/>Shakthi</a> for all the energy and
+motivation he&rsquo;s been pumping into the project himself. Thank you so much
+Shakthi!</p><p>Have fun experiencing OBM!</p><section class=footnotes role=doc-endnotes><hr><ol><li id=fn:1 role=doc-endnote><p>every plan is inside a particular track (theme), eg. data scientist,
+devops, etc. - this serves as WHY&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li></ol></section><div class=post-ender><div class=tag-list>TAGGED AS:<div class=tag><a href=/xampa/tags/productivity>PRODUCTIVITY</a></div></div><div class=share><a href="https://twitter.com/intent/tweet?text=Operation%20Blue%20Moon&url=https%3a%2f%2frj722.github.io%2fxampa%2fblog%2fobm%2f&via=antisemantic"><div class=share__image><img src=/xampa/images/share-on-twitter.svg></div><div class=share__text>Share on Twitter</div></a></div></div><div class=about><div class=t2>JOIN ME</div>Hi, I'm Rahul. I write about programming, design and self-learning. If you like what I'm doing, consider subscribing to my newsletter:<form action=https://rj722.github.io class=subscribe><input type=email class=subscribe__email placeholder="Your best email">
+<input type=submit class=subscribe__button title=Subscribe value=Subscribe></form></div></div></div><footer><div class=footer__copyright>Copyright © 2020 Rahul Jha</div><div class=footer__info>Made with <a href=https://gohugo.io/>Hugo</a> &mdash; Theme <a href=https://github.com/rj722/xampa>Red Zempa</a> by <a href=https://rj722.github.io/>Rahul Jha</a></div></footer></div></body></html>

@@ -1,0 +1,126 @@
+<!doctype html><html><head><title>"Isn't a Title of This Post" Isn't a Title of This Post | Rahul Jha (~RJ722) Blog</title><link rel=stylesheet href=/xampa/css/blog.css><link rel=stylesheet href=/xampa/css/syntax.css><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script><link rel=apple-touch-icon sizes=180x180 href=/xampa/icons/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/xampa/icons/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/xampa/icons/favicon-16x16.png><meta charset=utf-8><meta content="utf-8" http-equiv=encoding></head><body><div class=page><ul class=menu><li><a class=menu__item href=/xampa/>about</a></li><li><a class="menu__item menu__item__inside" href=/xampa/blog/>blog</a></li><li><a class=menu__item href=/xampa/etc>etc</a></li></ul><div id=content><div class=post><h1>"isn't a title of this post" isn't a title of this post</h1><div class=break-line></div><div class=timestamp>JANUARY 20, 2020</div><p>In the early part of the last century, when David Hilbert was working on
+stricter formalization of geometry than Euclid, Georg Cantor had worked out a
+theory of different types of infinities, <em>the theory of sets</em>. This
+theory would soon unveil a series of confusing paradoxes, leading to <a href=https://en.wikipedia.org/wiki/Foundations_of_mathematics#Foundational_crisis>a crisis in the Mathematics community </a> regarding the stability of the
+foundational principles of the math of that time.</p><p>Central to these paradoxes was the <em>Russell&rsquo;s paradox</em> (or more generally, as
+we&rsquo;d talk about later, the <em>Epimenides Paradox</em>). Let&rsquo;s see what it is.</p><p>In those simpler times, you were allowed to define a set if you could describe
+it in English. And, owing to mathematicians’ predilection for self-reference,
+sets could contain other sets.</p><p>Russell then, came up with this:</p><p>\(R\)&nbsp; is a set of all the sets which do not contain themselves.</p><p>The question was "Does \(R \) contain itself?" If it doesn’t, then according to
+the second half of the definition it should. But if it does, then it no longer
+meets the definition.</p><p>The same can symbolically be represented as:</p><p style=text-align:center>Let \(R = \{ x \mid x \not \in x \} \), then \(R \in R \iff R \not \in R \)</p><p>Cue mind exploding.</p><p>&ldquo;Grelling&rsquo;s paradox&rdquo; is a startling variant which uses adjectives instead of
+sets. If adjectives are divided into two classes, autological
+(self-descriptive) and heterological (non-self-descriptive), then, is
+&lsquo;heterological&rsquo; heterological? Try it!</p><h3 id=epimenides-paradox>Epimenides Paradox</h3><p>Or, the so-called <em>Liar Paradox</em> was another such paradox which shred apart
+whatever concept of &lsquo;computability&rsquo; was, at that time - the notion that things
+could either be true or false.</p><p>Epimenides was a Cretan, who made one immortal statement:</p><blockquote><div class=quote>All Cretans are liars.</div><cite>Epimenides, a Cretan</cite></blockquote><p>If all Cretans are liars, and Epimenides was a Cretan, then he was lying when
+he said that &ldquo;All Cretans are liars&rdquo;. But wait, if he was lying then, how can
+we &lsquo;prove&rsquo; that he wasn&rsquo;t lying about lying? Ein?</p><figure><img src=https://i.imgur.com/Cdd6LpT.png></figure><p>This is what makes it a <em>paradox</em>: A statement so rudely violating the assumed
+dichotomy of statements into true and false, because if you tentatively think
+it&rsquo;s true, it backfires on you and make you think that it is false. And a
+similar backfire occurs if you assume that the statement is false. Go ahead,
+try it!</p><p>If you look closely, there is one common culprit in all of these paradoxes,
+namely &lsquo;self-reference&rsquo;. Let&rsquo;s look at it more closely.</p><h3 id=strange-loopiness>Strange Loopiness</h3><p>If self-reference, or what Douglas Hofstadter - whose prolific work on the
+subject matter has inspired this blog post - calls &lsquo;Strange Loopiness&rsquo; was the
+source of all these paradoxes, it made perfect sense to just banish
+self-reference, or anything which allowed it to occur. Russell and Whitehead,
+two rebel mathematicians of the time, who subscribed to this point of view, set
+forward and undertook the mammoth exercise, namely <em>&ldquo;Principia Mathematica&rdquo;</em>,
+which we as we will see in a little while, was utterly demolished by Gödel&rsquo;s
+findings.</p><p>The main thing which made it difficult to ban self-reference was that it was
+hard to pin point where exactly did the self-reference occur. It may as well be
+spread out over several steps, as in this &lsquo;expanded&rsquo; version of Epimenides:</p><blockquote><div class=quote>The next statement is a lie.
+The previous statement is true.</div></blockquote><p>Russell and Whitehead, in <em>P.M.</em> then, came up with a multi-hierarchy set
+theory to deal with this. The basic idea was that a set of the lowest &lsquo;type&rsquo;
+could only contain &lsquo;objects&rsquo; as members (not sets). A set of the next type
+could then only either contain objects, or sets of lower types. This,
+implicitly banished self-reference.</p><p>Since, all sets must have a type, a set &lsquo;which contains all sets which are not
+members of themselves&rsquo; is not a set at all, and thus you can say that Russell&rsquo;s
+paradox was dealt with.</p><p>Similarly, if an attempt is made towards applying the expanded Epimenides to
+this theory, it must fail as well, for the first sentence to make a reference
+to the second one, it has to be hierarchically above it - in which case, the
+second one can&rsquo;t loop back to the first one.</p><p>Thirty one years after David Hilbert set before the academia to rigorously
+demonstrate that the system defined in <em>Principia Mathematica</em> was both
+<em>consistent</em> (contradiction-free) and <em>complete</em> (i.e. every true statement
+could be evaluated to true within the methods provided by <em>P.M.</em>), Gödel
+published his famous Incompleteness Theorem. By importing the Epimenides
+Paradox right into the heart of <em>P.M.</em>, he proved that not just the
+axiomatic system developed by Russell and Whitehead, but none of the
+axiomatic systems whatsoever were <em>complete</em> without being <em>inconsistent</em>.</p><p>Clear enough, <em>P.M.</em> lost it&rsquo;s charm in the realm of academics.</p><p>Before Gödel&rsquo;s work too, <em>P.M.</em> wasn&rsquo;t particularly loved as well.</p><p>Why?</p><p>It isn&rsquo;t just limited to this blog post, but we humans, in general, have a diet
+for self-reference - and this quirky theory severely limits our ability to
+abstract away details - something which we love, not only as programmers, but
+as linguists too - so much so, that the preceding paragraph, &ldquo;It isn&rsquo;t &mldr;
+<em>this</em> blog &mldr; <em>we</em> humans &mldr;&rdquo; would be doubly forbidden because the &lsquo;right&rsquo;
+to mention &lsquo;<em>this blog post&rsquo;</em> is limited only to something which is
+hierarchically above blog posts, &lsquo;<em>metablog-posts</em>&rsquo;. Secondly, me (presumably a
+human) belonging to the class <em>&lsquo;we&rsquo;</em> can&rsquo;t mention &lsquo;<em>we</em>&rsquo; either.</p><p>Since, we humans, love self-reference so much, let&rsquo;s discuss some ways in which
+it can be expressed in written form.</p><p>One way of making such a strange loop, and perhaps the &lsquo;simplest&rsquo; is using the
+word &lsquo;this&rsquo;. Here:</p><ul><li>This sentence is made up of eight words.</li><li>This sentence refers to itself, and is therefore useless.</li><li>This blog post is so good.</li><li>This sentence conveys you the meaning of &lsquo;this&rsquo;.</li><li>This sentence is a lie. (Epimenides Paradox)</li></ul><p>Another amusing trick for creating a self-reference without using the word
+&lsquo;this sentence&rsquo; is to quote the sentence inside itself.</p><p>Someone may come up with:</p><blockquote><div class=quote>The sentence &lsquo;The sentence contains five words&rsquo; contains five words.</div></blockquote><p>But, such an attempt must fail, for to quote a finite sentence inside itself
+would mean that the sentence is smaller than itself. However, infinite
+sentences can be self-referenced this way.</p><pre><code>The sentence
+    &quot;The sentence
+        &quot;The sentence
+                                ...etc
+                                ...etc
+        is infinitely long&quot;
+    is infinitely long&quot;
+is infinitely long&quot;
+</code></pre><p>There&rsquo;s a third method as well, which you already saw in the title - the Quine
+method. The term &lsquo;Quine&rsquo; was coined by Douglas Hofstadter in his book &ldquo;Gödel
+Escher, Bach&rdquo; (which heavily inspires this blog post). When using this, the
+self-reference is &lsquo;generated&rsquo; by describing a typographical entity, isomorphic
+to the quine sentence itself. This description is carried in two parts - one is
+a set of <em>&lsquo;instructions&rsquo;</em> about how to &lsquo;build&rsquo; the sentence, and the other, the
+<em>&lsquo;template&rsquo;</em> contains information about the construction materials required.</p><p>The Quine version of Epimenides would be:</p><blockquote><div class=quote>&ldquo;yields falsehood when preceded by it&rsquo;s quotation&rdquo; yields falsehood when preceded by it&rsquo;s quotation.</div></blockquote><p>Before going on with &lsquo;quining&rsquo;, let&rsquo;s take a moment and realize how awfully
+powerful our cognitive capacities are, and what goes in our head when a
+cognitive payload full of self-references is delivered - in order to decipher
+it, we not only need to know the language, but also need to work out the
+referent of the phrase analogous to &lsquo;this sentence&rsquo; in that language. This
+parsing depends on our complex, yet totally assimilated ability to handle the
+language.</p><p>The idea of referring to itself is quite mind-blowing, and we keep doing it all
+the time — perhaps, why it feels so &lsquo;easy&rsquo; for us to do so. But, we aren&rsquo;t born
+that way, we grow that way. This could better be realized by telling someone
+much younger &ldquo;This sentence is wrong.&rdquo;. They&rsquo;d probably be confused - What
+sentence is wrong?. The reason why it&rsquo;s so simple for self-reference to occur,
+and hence allow paradoxes, in our language, is well, our language. It allows
+our brain to do the heavy lifting of what the author is trying to get through
+us, without being verbose.</p><p>Back to Quines.</p><h2 id=reproducing-itself>Reproducing itself</h2><p>Now, that we are aware of how &lsquo;quines&rsquo; can manifest as self-reference, it would
+be interesting to see how the same technique can be used by a computer program
+to &lsquo;reproduce&rsquo; itself.</p><p>To make it further interesting, we shall choose the language most apt for the
+purpose - brainfuck:</p><pre><code>&gt;&gt;&gt;&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&gt;++++++++[-&gt;++++++++&lt;]&gt;--....[-]&lt;&lt;[&lt;]&lt;&lt;++++++++[-&gt;+++++&gt;++++++++&lt;&lt;]&gt;+++&gt;--&gt;[[-&lt;&lt;&lt;+&gt;.&gt;&gt;]&lt;.[-&gt;+&lt;]&lt;[-&gt;+&lt;]&gt;&gt;&gt;]&lt;&lt;&lt;&lt;[&lt;]&gt;[.&gt;]
+
+</code></pre><p>Running that program above produces itself as the output. I agree, it isn&rsquo;t the
+most descriptive program in the world, so written in Python below, is the
+nearest we can go to describe what&rsquo;s happening inside those horrible chains of
++&rsquo;s and >&rsquo;s:</p><div class=highlight><pre class=chroma><code class=language-python data-lang=python><span class=n>THREE_QUOTES</span> <span class=o>=</span> <span class=s1>&#39;&#34;&#39;</span> <span class=o>*</span> <span class=mi>3</span>
+
+<span class=k>def</span> <span class=nf>eniuq</span><span class=p>(</span><span class=n>template</span><span class=p>):</span> <span class=k>print</span><span class=p>(</span>
+  <span class=n>f</span><span class=s1>&#39;{template}({THREE_QUOTES}{template}{THREE_QUOTES})&#39;</span><span class=p>)</span>
+
+<span class=n>eniuq</span><span class=p>(</span><span class=s2>&#34;&#34;&#34;THREE_QUOTES = &#39;&#34;&#39; * 3
+</span><span class=s2>
+</span><span class=s2>def eniuq(template): print(
+</span><span class=s2>  f&#39;{template}({THREE_QUOTES}{template}{THREE_QUOTES})&#39;)
+</span><span class=s2>
+</span><span class=s2>eniuq&#34;&#34;&#34;</span><span class=p>)</span>
+</code></pre></div><p>The first line generates <code>"""</code> on the fly, which marks multiline strings in
+Python.</p><p>Next two lines define the <code>eniuq</code> function, which prints the argument template
+twice - once, plain and then surrounded with triple quotes.</p><p>The last 4 lines cleverly call this function so that the output of the program
+is the source code itself.</p><p>Since we are printing in an order opposite of quining, the name of the function
+is &lsquo;quine&rsquo; reversed -> <code>eniuq</code> (name stolen from Hofstadter again)</p><p>Remember the discussion about how self-reference capitalizes on the processor?
+What if ‘quining’ was a built-in feature of the language, providing what we in
+programmer lingo call &lsquo;syntactic sugar&rsquo;?</p><p>Let&rsquo;s assume that an asterisk, <code>*</code> in the brainfuck interpreter would copy the
+instructions before executing them, what would then be the output of the
+following program?</p><pre><code>*
+</code></pre><p>It&rsquo;d be an asterisk again. You could make an argument that this is silly, and
+should be counted as &lsquo;cheating&rsquo;. But, it&rsquo;s the same as relying on the
+processor, like using &ldquo;this sentence&rdquo; to refer to this sentence - you rely on
+your brain to do the inference for you.</p><p>What if <code>eniuq</code> was a builtin keyword in Python? A perfect self-rep was then
+just be a call away:</p><div class=highlight><pre class=chroma><code class=language-python data-lang=python><span class=n>eniuq</span><span class=p>(</span><span class=s1>&#39;eniuq&#39;</span><span class=p>)</span>
+</code></pre></div><p>What if <code>quine</code> was a verb in the English language? We could reduce a lot of
+explicit cognitive processes required for inference. The Epimenides paradox
+would then be:</p><blockquote><div class=quote>&ldquo;yields falsehood if quined&rdquo; yields falsehood if quined</div></blockquote><p>Now, that we are talking about self-rep, here&rsquo;s one last piece of entertainment
+for you.</p><h2 id=the-tuppers-self-referential-formula>The Tupper&rsquo;s self-referential formula</h2><p>This formula is defined through an inequality:</p><p align=center>\({1 \over 2} < \left\lfloor \mathrm{mod}\left(\left\lfloor {y \over 17} \right\rfloor 2^{-17 \lfloor x \rfloor - \mathrm{mod}(\lfloor y\rfloor, 17)},2\right)\right\rfloor\)</p><p>If you take that absurd thing above, and move around in the cartesian plane for
+the coordinates \(0 \le x \le 106, k \le y \le k + 17\), where \(k\) is a <a href=https://gist.githubusercontent.com/RJ722/cad7deff9a11ed927e0979091d45b479/raw/dd3b18d6e6b693685724a148f6ce937e6347f587/544-1.txt>544 digit integer</a> (just hold on with me here), color every pixel black for
+True, and white otherwise, you'd get:</p><figure><img src=https://i.imgur.com/aGouM3u.png></figure><p><p>This doesn&rsquo;t end here. If (k) is now replaced with <a href=https://gist.githubusercontent.com/RJ722/cad7deff9a11ed927e0979091d45b479/raw/4ab074d235de9e58f10b2d94fe4e9970cb03a6c7/291.txt>another integer containing 291 digits</a>, we get yours truly:</p></p><figure><img src=https://i.imgur.com/NvPlE33.png></figure><div class=post-ender><div class=tag-list>TAGGED AS:<div class=tag><a href=/xampa/tags/programming>PROGRAMMING</a></div><div class=tag><a href=/xampa/tags/mathematics>MATHEMATICS</a></div></div><div class=share><a href="https://twitter.com/intent/tweet?text=%22isn%27t%20a%20title%20of%20this%20post%22%20isn%27t%20a%20title%20of%20this%20post&url=https%3a%2f%2frj722.github.io%2fxampa%2fblog%2fself-referential-blog-post%2f&via=antisemantic"><div class=share__image><img src=/xampa/images/share-on-twitter.svg></div><div class=share__text>Share on Twitter</div></a></div></div><div class=about><div class=t2>JOIN ME</div>Hi, I'm Rahul. I write about programming, design and self-learning. If you like what I'm doing, consider subscribing to my newsletter:<form action=https://rj722.github.io class=subscribe><input type=email class=subscribe__email placeholder="Your best email">
+<input type=submit class=subscribe__button title=Subscribe value=Subscribe></form></div></div></div><footer><div class=footer__copyright>Copyright © 2020 Rahul Jha</div><div class=footer__info>Made with <a href=https://gohugo.io/>Hugo</a> &mdash; Theme <a href=https://github.com/rj722/xampa>Red Zempa</a> by <a href=https://rj722.github.io/>Rahul Jha</a></div></footer></div></body></html>

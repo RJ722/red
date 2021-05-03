@@ -1,0 +1,76 @@
+<!doctype html><html><head><title>The [Deceptive] Power of Visual Explanation | Rahul Jha (~RJ722) Blog</title><link rel=stylesheet href=/xampa/css/blog.css><link rel=stylesheet href=/xampa/css/syntax.css><link rel=apple-touch-icon sizes=180x180 href=/xampa/icons/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/xampa/icons/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/xampa/icons/favicon-16x16.png><meta charset=utf-8><meta content="utf-8" http-equiv=encoding></head><body><div class=page><ul class=menu><li><a class=menu__item href=/xampa/>about</a></li><li><a class="menu__item menu__item__inside" href=/xampa/blog/>blog</a></li><li><a class=menu__item href=/xampa/etc>etc</a></li></ul><div id=content><div class=post><h1>The [deceptive] power of visual explanation</h1><div class=break-line></div><div class=timestamp>JANUARY 22, 2019</div><p>Quite recently, I came across Jay Alammar&rsquo;s beautiful blog post, <a href=https://jalammar.github.io/visual-numpy/>&ldquo;A
+Visual Intro to NumPy & Data Representation&rdquo;</a>.</p><p>Before reading this, whenever I had to think about an array:</p><div class=highlight><pre class=chroma><code class=language-python data-lang=python><span class=n>In</span> <span class=p>[</span><span class=mi>1</span><span class=p>]:</span> <span class=kn>import</span> <span class=nn>numpy</span> <span class=kn>as</span> <span class=nn>np</span>
+
+<span class=n>In</span> <span class=p>[</span><span class=mi>2</span><span class=p>]:</span> <span class=n>data</span> <span class=o>=</span> <span class=n>np</span><span class=o>.</span><span class=n>array</span><span class=p>([</span><span class=mi>1</span><span class=p>,</span> <span class=mi>2</span><span class=p>,</span> <span class=mi>3</span><span class=p>])</span>
+
+<span class=n>In</span> <span class=p>[</span><span class=mi>3</span><span class=p>]:</span> <span class=n>data</span>
+<span class=n>Out</span><span class=p>[</span><span class=mi>3</span><span class=p>]:</span> <span class=n>array</span><span class=p>([</span><span class=mi>1</span><span class=p>,</span> <span class=mi>2</span><span class=p>,</span> <span class=mi>3</span><span class=p>])</span>
+</code></pre></div><p>I used to create a mental picture somewhat like this:</p><pre><code>       ┌────┬────┬────┐
+data = │  1 │  2 │  3 │
+       └────┴────┴────┘
+</code></pre><p>But Jay, on the other hand, uses a vertical stack for representing the same array.</p><figure><img src=https://jalammar.github.io/images/numpy/numpy-array.png><figcaption><div class=figcaption>Image from Jay's post.</div></figcaption></figure><p>At the first glance, and owing to the beautiful graphics Jay has created, it
+makes perfect sense.</p><p>Now, if you had only seen this image, and I ask you the dimensions of <code>data</code>,
+what would your answer be?</p><p>The mathematician inside you barks <code>(3, 1)</code>.</p><p>But, to my surprise, this wasn&rsquo;t the answer:</p><div class=highlight><pre class=chroma><code class=language-python data-lang=python><span class=n>In</span> <span class=p>[</span><span class=mi>4</span><span class=p>]:</span> <span class=n>data</span><span class=o>.</span><span class=n>shape</span>
+<span class=n>Out</span><span class=p>[</span><span class=mi>4</span><span class=p>]:</span> <span class=p>(</span><span class=mi>3</span><span class=p>,)</span>
+</code></pre></div><p><code>(3, )</code> eh? wondering, what would a <code>(3, 1)</code> array look like?</p><div class=highlight><pre class=chroma><code class=language-python data-lang=python><span class=n>In</span> <span class=p>[</span><span class=mi>5</span><span class=p>]:</span> <span class=n>data</span><span class=o>.</span><span class=n>reshape</span><span class=p>((</span><span class=mi>3</span><span class=p>,</span> <span class=mi>1</span><span class=p>))</span>
+<span class=n>Out</span><span class=p>[</span><span class=mi>5</span><span class=p>]:</span>
+<span class=n>array</span><span class=p>([[</span><span class=mi>1</span><span class=p>],</span>
+       <span class=p>[</span><span class=mi>2</span><span class=p>],</span>
+       <span class=p>[</span><span class=mi>3</span><span class=p>]])</span>
+</code></pre></div><p>Hmm, This begs the question: what is the difference between an array of shape
+<code>(R, )</code> and <code>(R, 1)</code>. A little bit of research landed me at <a href=https://stackoverflow.com/a/22074424/6426752>this answer on
+StackOverflow</a>. Let&rsquo;s see:</p><blockquote><div class=quote><p>The best way to think about NumPy arrays is that they consist of two parts, a
+<em>data buffer</em> which is just a block of raw elements, and a <em>view</em> which
+describes how to interpret the data buffer.</p><p>For example, if we create an array of 12 integers:</p><div class=highlight><pre class=chroma><code class=language-python data-lang=python><span class=o>&gt;&gt;&gt;</span> <span class=n>a</span> <span class=o>=</span> <span class=n>numpy</span><span class=o>.</span><span class=n>arange</span><span class=p>(</span><span class=mi>9</span><span class=p>)</span>
+<span class=o>&gt;&gt;&gt;</span> <span class=n>a</span>
+<span class=n>array</span><span class=p>([</span> <span class=mi>0</span><span class=p>,</span>  <span class=mi>1</span><span class=p>,</span>  <span class=mi>2</span><span class=p>,</span>  <span class=mi>3</span><span class=p>,</span>  <span class=mi>4</span><span class=p>,</span>  <span class=mi>5</span><span class=p>,</span>  <span class=mi>6</span><span class=p>,</span>  <span class=mi>7</span><span class=p>,</span>  <span class=mi>8</span><span class=p>,</span>  <span class=mi>9</span><span class=p>])</span>
+</code></pre></div><p>Then <code>a</code> consists of a data buffer, arranged something like this:</p><pre><code>┌────┬────┬────┬────┬────┬────┬────┬────┬────┬────┐
+│  0 │  1 │  2 │  3 │  4 │  5 │  6 │  7 │  8 │  9 │
+└────┴────┴────┴────┴────┴────┴────┴────┴────┴────┘
+</code></pre><p>and a view which describes how to interpret the data:</p><div class=highlight><pre class=chroma><code class=language-python data-lang=python><span class=o>&gt;&gt;&gt;</span> <span class=n>a</span><span class=o>.</span><span class=n>flags</span>
+<span class=n>C_CONTIGUOUS</span> <span class=p>:</span> <span class=bp>True</span>
+<span class=n>F_CONTIGUOUS</span> <span class=p>:</span> <span class=bp>True</span>
+<span class=n>OWNDATA</span> <span class=p>:</span> <span class=bp>True</span>
+<span class=n>WRITEABLE</span> <span class=p>:</span> <span class=bp>True</span>
+<span class=n>ALIGNED</span> <span class=p>:</span> <span class=bp>True</span>
+<span class=n>UPDATEIFCOPY</span> <span class=p>:</span> <span class=bp>False</span>
+<span class=o>&gt;&gt;&gt;</span> <span class=n>a</span><span class=o>.</span><span class=n>dtype</span>
+<span class=n>dtype</span><span class=p>(</span><span class=s1>&#39;int64&#39;</span><span class=p>)</span>
+<span class=o>&gt;&gt;&gt;</span> <span class=n>a</span><span class=o>.</span><span class=n>itemsize</span>
+<span class=mi>8</span>
+<span class=o>&gt;&gt;&gt;</span> <span class=n>a</span><span class=o>.</span><span class=n>strides</span>
+<span class=p>(</span><span class=mi>8</span><span class=p>,)</span>
+<span class=o>&gt;&gt;&gt;</span> <span class=n>a</span><span class=o>.</span><span class=n>shape</span>
+<span class=p>(</span><span class=mi>10</span><span class=p>,)</span>
+</code></pre></div><p>Here the <em>shape</em> <code>(12,)</code> means the array is indexed by a single index which
+runs from 0 to 11. Conceptually, if we label this single index <code>i</code>, the array
+<code>a</code> looks like this:</p><pre><code>i= 0    1    2    3    4    5    6    7    8    9   
+┌────┬────┬────┬────┬────┬────┬────┬────┬────┬────┐
+│  0 │  1 │  2 │  3 │  4 │  5 │  6 │  7 │  8 │  9 │
+└────┴────┴────┴────┴────┴────┴────┴────┴────┴────┘
+</code></pre><p>If we <a href=http://docs.scipy.org/doc/numpy/reference/generated/numpy.reshape.html>reshape</a> an array, this doesn&rsquo;t change the data buffer.
+Instead, it creates a new view that describes a different way to interpret the
+data. So after:</p><div class=highlight><pre class=chroma><code class=language-python data-lang=python><span class=o>&gt;&gt;&gt;</span> <span class=n>b</span> <span class=o>=</span> <span class=n>a</span><span class=o>.</span><span class=n>reshape</span><span class=p>((</span><span class=mi>3</span><span class=p>,</span> <span class=mi>4</span><span class=p>))</span>
+</code></pre></div><p>the array <code>b</code> has the same data buffer as <code>a</code>, but now it is indexed by <em>two</em>
+indices which run from 0 to 2 and 0 to 3 respectively. If we label the two
+indices <code>i</code> and <code>j</code>, the array <code>b</code> looks like this:</p></div></blockquote><div class=highlight><pre class=chroma><code class=language-python data-lang=python><span class=n>i</span><span class=o>=</span> <span class=mi>0</span>    <span class=mi>0</span>    <span class=mi>0</span>    <span class=mi>0</span>    <span class=mi>1</span>    <span class=mi>1</span>    <span class=mi>1</span>    <span class=mi>1</span>    <span class=mi>2</span>    <span class=mi>2</span>    <span class=mi>2</span>    <span class=mi>2</span>
+<span class=n>j</span><span class=o>=</span> <span class=mi>0</span>    <span class=mi>1</span>    <span class=mi>2</span>    <span class=mi>3</span>    <span class=mi>0</span>    <span class=mi>1</span>    <span class=mi>2</span>    <span class=mi>3</span>    <span class=mi>0</span>    <span class=mi>1</span>    <span class=mi>2</span>    <span class=mi>3</span>
+<span class=err>┌────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬────┐</span>
+<span class=err>│</span>  <span class=mi>0</span> <span class=err>│</span>  <span class=mi>1</span> <span class=err>│</span>  <span class=mi>2</span> <span class=err>│</span>  <span class=mi>3</span> <span class=err>│</span>  <span class=mi>4</span> <span class=err>│</span>  <span class=mi>5</span> <span class=err>│</span>  <span class=mi>6</span> <span class=err>│</span>  <span class=mi>7</span> <span class=err>│</span>  <span class=mi>8</span> <span class=err>│</span>  <span class=mi>9</span> <span class=err>│</span> <span class=mi>10</span> <span class=err>│</span> <span class=mi>11</span> <span class=err>│</span>
+<span class=err>└────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴────┘</span>
+</code></pre></div><p>So, if were to actually have a <code>(3, 1)</code> matrix, we would have the exact same
+stack representation as a <code>(3, )</code> matrix, thus creating the confusion.</p><p>So, what about the horizontal representation?</p><p>An argument can be made that the horizontal representation can be misinterpreted
+as a <code>(1, 3)</code> matrix, our brains are so accustomed to seeing it as 1-D array,
+that it is almost never the case (at least with folks who have worked with
+Python before).</p><p>Of course, it all makes perfect sense now, but it did take me a while to figure
+out what exactly was going under the hood here.</p><figure><img src=https://i.stack.imgur.com/4lunM.gif><figcaption><div class=figcaption>Another great visual explanation – Fourier Series – Decomposition of a square wave into a sum of infinite sinusoids.</div></figcaption></figure><p>I also realized that while it is <a href=https://math.stackexchange.com/questions/733754/visually-stunning-math-concepts-which-are-easy-to-explain>hugely helpful to visualize</a> something
+when learning about it, but one should always take the visual representation
+with a grain of salt. As <a href=https://math.stackexchange.com/questions/743067/visually-deceptive-proofs-which-are-mathematically-wrong>we can see, they are not entirely accurate</a>.</p><p>For now, I&rsquo;m sticking to my prior way of picturing a 1-D array as a horizontal
+list to avoid the confusion. I shall update the blog if I find anything
+otherwise.</p><p>My point is <em>not</em> that Jay&rsquo;s drawings are flawed, but how susceptible we are to
+visual deceptions. In this case, it was relatively easier to figure out, because
+it was code, which forces one to pay attention to each and every detail, however
+minor it may be.</p><p>After all, human brain, prone to so many biases, taking shortcuts for nearly
+every decision we make (thus leaving room for sanity) isn&rsquo;t anywhere near as
+perfect as it thinks it is.</p><div class=post-ender><div class=tag-list>TAGGED AS:<div class=tag><a href=/xampa/tags/programming>PROGRAMMING</a></div></div><div class=share><a href="https://twitter.com/intent/tweet?text=The%20%5bdeceptive%5d%20power%20of%20visual%20explanation&url=https%3a%2f%2frj722.github.io%2fxampa%2fblog%2fvisual-explanation%2f&via=antisemantic"><div class=share__image><img src=/xampa/images/share-on-twitter.svg></div><div class=share__text>Share on Twitter</div></a></div></div><div class=about><div class=t2>JOIN ME</div>Hi, I'm Rahul. I write about programming, design and self-learning. If you like what I'm doing, consider subscribing to my newsletter:<form action=https://rj722.github.io class=subscribe><input type=email class=subscribe__email placeholder="Your best email">
+<input type=submit class=subscribe__button title=Subscribe value=Subscribe></form></div></div></div><footer><div class=footer__copyright>Copyright © 2020 Rahul Jha</div><div class=footer__info>Made with <a href=https://gohugo.io/>Hugo</a> &mdash; Theme <a href=https://github.com/rj722/xampa>Red Zempa</a> by <a href=https://rj722.github.io/>Rahul Jha</a></div></footer></div></body></html>

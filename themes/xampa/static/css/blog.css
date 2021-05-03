@@ -59,10 +59,17 @@ body {
 
 a {
     color: #4046DB;
+    text-decoration: none;
+    border-bottom: 0px solid gray;
 }
 
-a :visited {
+a:visited {
     color: #4046DB;
+}
+
+a:hover {
+    color: #4046DB;
+    border-bottom: 1px dashed gray;
 }
 
 #content {
@@ -288,7 +295,7 @@ cite::before{
 }
 
 .menu__item {
-    color: rgba(100, 100, 110, 0.5);
+    color: rgba(100, 100, 110, 0.5) !important;
     border-bottom-color: transparent;
     text-decoration: none;
     display: inline-block;
@@ -407,13 +414,21 @@ footer div {
     font-family: sans-serif;
     font-weight: lighter;
     font-size: 15px;
-    color: #5E6071;
+    color: #5E6071 !important;
 }
 
 footer a{
     text-decoration: none;
     color: unset;
     border-bottom: 1px dashed gray;
+}
+
+footer a:visited {
+    color: unset;
+}
+
+footer a:hover {
+    color: unset;
 }
 
 .footer__copyright{
@@ -439,4 +454,34 @@ footer a{
     font-size: 13px;
     font-family: sans-serif;
     letter-spacing: -0.01em;
+}
+
+.blog-list {
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 90%; */
+}
+
+.post-year {
+    font-size: 15px;
+    color: #bdbdbd;
+    font-family: sans-serif;
+    border-bottom: solid 1px #eee;
+    letter-spacing: 0.5px;
+}
+
+.post-box {
+    display: table;
+}
+
+.post-date {
+    display: table-cell;
+    width: 150px;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.post-title {
+    display: table-cell;
+    padding: 0;
 }

@@ -3,7 +3,9 @@ baseURL = "https://rj722.github.io/xampa/"
 languageCode = "en-us"
 title = "Rahul Jha (~RJ722) Blog"
 
-pygmentsUseClasses=true
+pygmentsUseClasses = true
+
+enableGitInfo = true
 
 [markup]
     [markup.goldmark]

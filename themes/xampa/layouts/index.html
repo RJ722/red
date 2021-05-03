@@ -1,5 +1,29 @@
 {{ define "main" }}
-  {{ range first 10 .Data.Pages }}
-    <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-  {{ end }}
+<div class="home-grid-container">
+  <div class="home-grid-left">
+    {{ .Content }}
+    <div class="tiny">Updated on {{ .Lastmod.Format "January 2nd, 2006" }}</div>
+    <h2> Contact </h2>
+    {{ with .Site.GetPage "contact/_index.md" }} {{ .Content }} {{ end }}
+  </div>
+  <div class="home-grid-right">
+    <div class="about">
+      <img src='{{ "images/logo.png" }}' width="50%">
+      <div class="newsletter_description">
+        I publish a short and sweet newsletter with links to new articles I write. Consider subscribing:
+      </div>
+      <div class="subscribe_column_layout">
+        <form action="https://rj722.github.io" class="subscribe">
+            <input type="email" class="subscribe__email" placeholder="Your best email" />
+            <newline></newline>
+            <input type="submit" class="subscribe__button" title="Subscribe" value="Subscribe"/>
+        </form>
+      </div>
+      <div class="tiny">
+        No Ads. No Spam.
+      </div>
+      <div class="tiny"><a href='{{ "blog/index.xml" | relURL }}'>Subscribe via RSS</a></div>
+    </div>
+  </div>
+</div>
 {{ end }}

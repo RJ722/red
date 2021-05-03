@@ -58,9 +58,9 @@ body {
 }
 
 .page {
-    width: 700px;
     margin: 0 auto;
     padding: 0;
+    width: 700px;
 }
 
 .post {
@@ -94,6 +94,33 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.home-grid-container {
+    margin: 0 2em;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+
+.home-grid-left {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 40px;
+    max-width: 800px;
+}
+
+.home-grid-right {
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+}
+
+.home-grid-container h1 {
+    margin: 0 0 0.5em;
+    text-align: unset;
 }
 
 .post a {
@@ -288,18 +315,34 @@ cite::before{
     margin: 0.75em auto
 }
 
+.subscribe_column_layout .subscribe {
+    flex-flow: column nowrap;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom:5px;
+    margin: 10px;
+}
+
 .subscribe__email {
     padding: 17px;
     padding-left: 50px;
     height: 50px;
-    width: 320px;
+    width: 64%;
     border: 0.5px solid #4046DB;
     background-image: url('../images/mail.png');
     background-repeat: no-repeat;
     background-position: left center;
     outline: 0;
     box-sizing: border-box;
-    border-radius: 1px;
+    border-radius: 5px;
+}
+
+.subscribe_column_layout .subscribe__email {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .subscribe input[type=email] {
@@ -316,24 +359,32 @@ cite::before{
     color: white;
     text-transform: uppercase;
     background: #4046DB;
-    width: 180px;
+    width: 34%;
     height: 50px;
     border: 0.5px solid #4046DB;
-    border-radius: 1px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
+.subscribe_column_layout .subscribe__button {
+    width: 100%;
+    /* height: 40px; */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 footer {
+    margin: auto auto;
     display: flex;
     height: 80px;
-    width: 100%;
-    /* background: #F9F9FE; */
+    width: 700px;
 }
 
 footer div {
     flex-direction: column;
     margin: auto auto;
-    /* width: 100%; */
     font-family: sans-serif;
     font-weight: lighter;
     font-size: 15px;
@@ -353,4 +404,15 @@ footer a{
 .footer__info {
     display: inline;
     float: right
+}
+
+.newsletter_description {
+    margin-top: 10px;
+    /* letter-spacing: -0.01em; */
+}
+
+.tiny {
+    font-size: 13px;
+    font-family: sans-serif;
+    letter-spacing: -0.01em;
 }

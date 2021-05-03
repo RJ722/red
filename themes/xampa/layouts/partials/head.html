@@ -2,6 +2,9 @@
     <title> {{ .Title | title }} {{ if (not (eq .Title .Site.Title)) }} | {{ .Site.Title }} {{ end }} </title>
     <link rel="stylesheet" href='{{ "css/blog.css" | relURL }}'>
     <link rel="stylesheet" href='{{ "css/syntax.css" | relURL }}'>
+    {{ if eq .Params.layout "wide" }}
+        <link rel="stylesheet" href='{{ "css/wide.css" | relURL }}'>
+    {{ end }}
 
     <link rel="apple-touch-icon" sizes="180x180" href='{{ "/icons/apple-touch-icon.png" | relURL }}'>
     <link rel="icon" type="image/png" sizes="32x32" href='{{ "/icons/favicon-32x32.png" | relURL }}'>

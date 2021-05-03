@@ -13,8 +13,10 @@
         {{ end }}
       </div>
       <div class="share">
+      <a href="https://twitter.com/intent/tweet?text={{ .Title }}&url={{ .Permalink }}&via=antisemantic">
         <div class="share__image"> <img src='{{ "images/share-on-twitter.svg" | relURL }}'> </div>
-        <div class="share__text"> Share on Twitter </div>
+        <div class="share__text">Share on Twitter</div>
+      </a>
       </div>
     </div>
     <div class="about">

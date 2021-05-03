@@ -1,0 +1,5 @@
+{{ $cite := .Get "cite" }}
+<blockquote>
+    <div class="quote">{{- .Page.RenderString .Inner }}</div>
+    {{- if $cite }}<cite>{{- .Page.RenderString $cite }}</cite>{{- end }}
+</blockquote>

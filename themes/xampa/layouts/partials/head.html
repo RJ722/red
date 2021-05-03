@@ -5,6 +5,12 @@
     {{ if eq .Params.layout "wide" }}
         <link rel="stylesheet" href='{{ "css/wide.css" | relURL }}'>
     {{ end }}
+    {{ if .Params.load_mathjax }}
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async
+                src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        </script>
+    {{ end }}
 
     <link rel="apple-touch-icon" sizes="180x180" href='{{ "/icons/apple-touch-icon.png" | relURL }}'>
     <link rel="icon" type="image/png" sizes="32x32" href='{{ "/icons/favicon-32x32.png" | relURL }}'>

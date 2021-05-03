@@ -51,7 +51,7 @@ body {
     text-rendering: optimizeLegibility;
     font-family: 'body';
     font-size: 25px;
-    line-height: 130%;
+    line-height: 1.3em;
     letter-spacing: 0.005em;
     margin: 0px;
     padding: 0px;
@@ -156,9 +156,26 @@ pre {
     font-family: mono;
     font-size: 17px;
     display: block;
+    max-width: 100%;
     word-wrap: break-word;
+    overflow-wrap: break-word;
     page-break-inside: avoid;
     /* margin-left: 1.5em; */
+}
+
+code {
+    max-width: 100%;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+p > code {
+    font-size: 16px;
+    line-height: 16px;
+    vertical-align: top;
+    top: 0.6em;
+    position: relative;
 }
 
 .full-width {
@@ -182,6 +199,11 @@ blockquote {
     border-left: 6px solid #4046DB;
     /* width: 500px; */
     border-radius: 4px;
+}
+
+.quote > :not(pre) {
+    word-spacing: 0.1em;
+    letter-spacing: 0.01em;
 }
 
 cite {
@@ -271,6 +293,7 @@ cite::before{
     display: inline-block;
     vertical-align: sub;
     margin-right: 0.25em;
+    margin-top: 4px;
 }
 
 .share__image img {
@@ -280,6 +303,11 @@ cite::before{
 .share__text {
     display: inline-block;
     text-transform: uppercase;
+    vertical-align: top;
+}
+
+.share a {
+    border-bottom: 0px solid gray;
 }
 
 .menu {
@@ -484,4 +512,21 @@ footer a:hover {
 .post-title {
     display: table-cell;
     padding: 0;
+}
+
+.figcaption {
+    text-align: center;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+sup {
+    vertical-align: top;
+    position: relative;
+    top: -0.5em;
+    font-size: 15px;
+}
+
+em, strong {
+    line-height: 15px; /* calibrated with 1.3em line height. /me shrugs. */
 }

@@ -1,0 +1,11 @@
+<!-- 
+    Get the quote file name content/quotes/ and render it here.
+    If the file does not exist, do not enter anything.
+-->
+
+<blockquote>
+    {{- with .Site.GetPage (.Get "src") }}
+        <div class="quote">{{- .RenderString .Content }}</div>
+        {{- if .Params.cite }}<cite>{{- .RenderString .Params.cite }}</cite>{{- end }}
+    {{- end }}
+</blockquote>

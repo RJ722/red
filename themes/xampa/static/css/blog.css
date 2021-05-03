@@ -57,6 +57,14 @@ body {
     padding: 0px;
 }
 
+a {
+    color: #4046DB;
+}
+
+a :visited {
+    color: #4046DB;
+}
+
 .page {
     margin: 0 auto;
     padding: 0;
@@ -320,7 +328,6 @@ cite::before{
     width: 100%;
     padding-top: 5px;
     padding-bottom:5px;
-    margin: 10px;
 }
 
 .subscribe__email {
@@ -373,6 +380,14 @@ cite::before{
     margin-bottom: 5px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.after_subscribe p{
+    font-size: 13px;
+    font-family: sans-serif;
+    letter-spacing: -0.01em;
+    margin-top: -1em;
+    margin-bottom: -1em;
 }
 
 footer {

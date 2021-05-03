@@ -65,6 +65,10 @@ a :visited {
     color: #4046DB;
 }
 
+#content {
+    margin-bottom: 20px;
+}
+
 .page {
     margin: 0 auto;
     padding: 0;
@@ -424,6 +428,11 @@ footer a{
 .newsletter_description {
     margin-top: 10px;
     /* letter-spacing: -0.01em; */
+}
+
+.newsletter_fullpage {
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .tiny {

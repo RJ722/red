@@ -2,7 +2,7 @@
 <div class="home-grid-container">
   <div class="home-grid-left">
     {{ .Content }}
-    <div class="tiny">Updated on {{ .Lastmod.Format "January 2nd, 2006" }}</div>
+    <div class="tiny">Updated on {{ .Lastmod.Format "January 2, 2006" }}</div>
     <h2> Contact </h2>
     {{ with .Site.GetPage "contact/_index.md" }} {{ .Content }} {{ end }}
   </div>
@@ -20,8 +20,7 @@
         </form>
       </div>
       <div class="tiny" style="margin-top: -1em;">No Ads. No Spam.</div>
-      <div class="tiny" style="margin: -0.5em -1em;"><a href='{{ "blog/index.xml" | relURL }}'>Subscribe via RSS</a></p>
-      </div>
+      <div class="tiny" style="margin: -0.5em -1em;"><a href='{{ "blog/index.xml" | relURL }}'>Subscribe via RSS</a></p></div>
     </div>
   </div>
 </div>

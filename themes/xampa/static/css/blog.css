@@ -160,7 +160,14 @@ pre {
     word-wrap: break-word;
     overflow-wrap: break-word;
     page-break-inside: avoid;
-    /* margin-left: 1.5em; */
+    background: ghostwhite;
+    padding: 15px;
+}
+
+.chroma {
+    /* Interesting alternatives in case I decide to add another color to
+    pallette: #fff9f8, #faf8f5 */
+    background: ghostwhite !important;
 }
 
 code {

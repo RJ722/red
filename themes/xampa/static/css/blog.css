@@ -193,6 +193,23 @@ blockquote {
     margin: 1.5em 0 0.75em 0;
 }
 
+blockquote p {
+    display: contents;
+}
+
+blockquote p::after {
+    content: "\a\a";
+    white-space: pre;
+}
+
+/* blockquote p:nth-child(2) {
+    display: block !important;
+} */
+
+blockquote p:last-child::after {
+    content: "" !important;
+}
+
 .quote {
     /* opacity: 70%; */
     padding: 0.5em 1em;

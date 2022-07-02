@@ -50,7 +50,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     font-family: 'body';
-    font-size: 25px;
+    font-size: 22px;
     line-height: 1.3em;
     letter-spacing: 0.005em;
     margin: 0px;
@@ -60,7 +60,6 @@ body {
 a {
     color: #4046DB;
     text-decoration: none;
-    border-bottom: 0px solid gray;
 }
 
 a:visited {
@@ -69,11 +68,10 @@ a:visited {
 
 a:hover {
     color: #4046DB;
-    border-bottom: 1px dashed gray;
 }
 
 #content {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 .page {
@@ -127,7 +125,9 @@ img {
 .home-grid-left {
     grid-column-start: 1;
     grid-column-end: 3;
-    padding: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
     max-width: 800px;
 }
 
@@ -140,11 +140,6 @@ img {
 .home-grid-container h1 {
     margin: 0 0 0.5em;
     text-align: unset;
-}
-
-.post a {
-    text-decoration: none;
-    border-bottom: 1px dashed gray;
 }
 
 .post .footnote-ref {
@@ -209,10 +204,6 @@ blockquote p::after {
     white-space: pre;
 }
 
-/* blockquote p:nth-child(2) {
-    display: block !important;
-} */
-
 blockquote p:last-child::after {
     content: "" !important;
 }
@@ -265,7 +256,7 @@ cite::before{
 }
 
 .timestamp {
-    font-family: 'sans-serif';
+    font-family: mono;
     font-style: normal;
     font-weight: lighter;
     font-size: 13px;
@@ -278,13 +269,13 @@ cite::before{
 .break-line {
     margin-top: 1em;
     height: 3px;
-    background: #4046DB;
+    background: black;
 }
 
 .tag {
     display: inline;
     margin-left: 0.5em;
-    font-family: 'sans-serif';
+    font-family: mono;
     font-style: normal;
     font-weight: normal;
     text-transform: uppercase;
@@ -300,12 +291,12 @@ cite::before{
 
 .post-ender {
     display: block;
-    font-family: 'sans-serif';
+    font-family: mono;
     font-style: normal;
     font-weight: lighter;
     font-size: 15px;
     letter-spacing: -0.01em;
-    margin-top: 1.5em;
+    margin-top: 4em;
 }
 
 .share {
@@ -330,10 +321,6 @@ cite::before{
     vertical-align: top;
 }
 
-.share a {
-    border-bottom: 0px solid gray;
-}
-
 .menu {
     display: table;
     margin: 1em auto;
@@ -347,17 +334,19 @@ cite::before{
 }
 
 .menu__item {
-    color: rgba(100, 100, 110, 0.5) !important;
+    color: rgba(100, 100, 100, 1) !important;
     border-bottom-color: transparent;
     text-decoration: none;
     display: inline-block;
-    font-family: sans-serif;
-    font-weight: normal;
+    font-family: mono;
     font-size: 20px;
+    padding: 10px;
 }
 
 .menu__item__inside {
-    border-bottom: 2px solid #4046DB;
+    border-bottom: 2px ridge rgba(100, 100, 100, 0.5);
+    font-weight: bold;
+    color: black !important;
 }
 
 .about {
@@ -372,7 +361,7 @@ cite::before{
 
 .t2 {
     margin: 0.5em auto;
-    font-family: sans-serif;
+    font-family: mono;
     font-weight: bold;
     font-size: 22px;
     line-height: 27px;
@@ -405,6 +394,7 @@ cite::before{
     outline: 0;
     box-sizing: border-box;
     border-radius: 5px;
+    font-family: mono;
 }
 
 .subscribe_column_layout .subscribe__email {
@@ -416,14 +406,13 @@ cite::before{
 }
 
 .subscribe input[type=email] {
-    font-family: sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 21px;
 }
 
 .subscribe__button {
-    font-style: sans-serif;
+    font-style: mono;
     font-weight: bold;
     font-size: 20px;
     color: white;
@@ -445,14 +434,6 @@ cite::before{
     margin-right: auto;
 }
 
-.after_subscribe p{
-    font-size: 13px;
-    font-family: sans-serif;
-    letter-spacing: -0.01em;
-    margin-top: -1em;
-    margin-bottom: -1em;
-}
-
 footer {
     margin: auto auto;
     display: flex;
@@ -463,9 +444,8 @@ footer {
 footer div {
     flex-direction: column;
     margin: auto auto;
-    font-family: sans-serif;
     font-weight: lighter;
-    font-size: 15px;
+    font-size: 18px;
     color: #5E6071 !important;
 }
 
@@ -494,7 +474,6 @@ footer a:hover {
 
 .newsletter_description {
     margin-top: 10px;
-    /* letter-spacing: -0.01em; */
 }
 
 .newsletter_fullpage {
@@ -503,39 +482,44 @@ footer a:hover {
 }
 
 .tiny {
-    font-size: 13px;
-    font-family: sans-serif;
-    letter-spacing: -0.01em;
+    font-family: body;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
 }
 
 .blog-list {
     margin-left: auto;
     margin-right: auto;
-    /* width: 90%; */
 }
 
 .post-year {
     font-size: 15px;
     color: #bdbdbd;
-    font-family: sans-serif;
+    font-family: mono;
     border-bottom: solid 1px #eee;
     letter-spacing: 0.5px;
 }
 
 .post-box {
     display: table;
+    margin-top: 18px;
+    margin-bottom: 18px;
 }
 
 .post-date {
     display: table-cell;
     width: 150px;
     font-size: 16px;
-    font-family: sans-serif;
+    font-family: mono;
 }
 
 .post-title {
     display: table-cell;
     padding: 0;
+    font-family: mono;
+    font-size: 20px;
+    line-height: 1.3;
 }
 
 .figcaption {

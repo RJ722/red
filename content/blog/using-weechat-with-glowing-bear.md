@@ -90,10 +90,10 @@ password. But, I can manage this level of risk! :-)
 I run glowing bear on qutebrowser, through which I can access the whole interface
 without ever having to leave the comfort of my keyboard. \o/
 
-## Further TODO's
+## Further todo
 
 Glowing Bear's notification system is a little weird - it just stops notifying
-me out of the blue. Remember my friend, [Armagaeddon][armageddon] - he actually
+me out of the blue. Remember my friend, [Armagaeddon][armageddon]? He actually
 has a weechat plugin for channeling remote notifications to local systems, but
 it turned out that the script will take some additional work to work with macOS.
 

@@ -78,6 +78,11 @@ a:hover {
     margin: 0 auto;
     padding: 0;
     width: 700px;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .post {
@@ -166,10 +171,9 @@ pre {
 }
 
 code {
-    max-width: 100%;
     white-space: pre-wrap;
     word-wrap: break-word;
-    overflow-wrap: break-word;
+    overflow-wrap: anywhere;
 }
 
 p > code {
@@ -178,15 +182,6 @@ p > code {
     vertical-align: top;
     top: 0.6em;
     position: relative;
-}
-
-.full-width {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
 }
 
 blockquote {
@@ -340,7 +335,7 @@ cite::before{
     display: inline-block;
     font-family: mono;
     font-size: 20px;
-    padding: 10px;
+    padding: 5px;
 }
 
 .menu__item__inside {
@@ -435,15 +430,14 @@ cite::before{
 }
 
 footer {
-    margin: auto auto;
     display: flex;
-    height: 80px;
+    padding: 20px 0px;
     width: 700px;
+    justify-content: space-between;
 }
 
 footer div {
     flex-direction: column;
-    margin: auto auto;
     font-weight: lighter;
     font-size: 18px;
     color: #5E6071 !important;
@@ -452,7 +446,6 @@ footer div {
 footer a{
     text-decoration: none;
     color: unset;
-    border-bottom: 1px dashed gray;
 }
 
 footer a:visited {

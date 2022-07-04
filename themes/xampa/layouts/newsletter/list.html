@@ -1,14 +1,16 @@
 {{ define "main" }}
-    <h1> {{ .Title }} </h1>
-    <div class="newsletter_fullpage">
+    <div id="newsletter_fullpage">
+        <h1> {{ .Title }} </h1>
         {{ .Content }}
         <form action="https://rj722.github.io" class="subscribe">
             <input type="email" spellcheck="false" class="subscribe__email" placeholder="Your best email" />
             <input type="submit" class="subscribe__button" title="Subscribe" value="Subscribe"/>
         </form>
         <!-- <div class="tiny" style="margin-top: -1em; text-align: center;">No Ads. No Spam.</div> -->
-        <div class="tiny" style="margin: -0.5em -1em; text-align: center;">
-            Or <a href='{{ "blog/index.xml" | relURL }}'>via RSS</a>
-        </div>
+        <center>
+            <div class="tiny">
+                You can also subscribe <a href='{{ "blog/index.xml" | relURL }}'>via RSS</a>.
+            </div>
+        </center>
     </div>
 {{ end }}

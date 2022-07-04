@@ -469,9 +469,13 @@ footer a:hover {
     margin-top: 10px;
 }
 
-.newsletter_fullpage {
+#newsletter_fullpage {
     padding-left: 10%;
     padding-right: 10%;
+}
+
+#newsletter_fullpage > h1 {
+    margin: 0px;
 }
 
 .tiny {

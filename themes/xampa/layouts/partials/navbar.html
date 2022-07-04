@@ -1,11 +1,12 @@
 <ul class="menu">
     <li>
-        <a class='menu__item {{ if not .Section }}menu__item__inside{{ end }}' href='{{ "/" | absURL }}'>about</a>
+        <a class='menu__item {{ if not .Section }}menu__item__inside{{ end }}' href='{{ .Site.Home.Permalink }}'>about</a>
     </li>
+    <!--TODO: Handle the case of taxonomies.-->
     <li>
         <a class='menu__item {{ if eq .Section "blog" }}menu__item__inside{{ end }}' href='{{ "blog/" | absURL }}'>blog</a>
     </li>
     <li>
-        <a class='menu__item {{ if eq .Section "newsletter" }}menu__item__inside{{ end }}' href='{{ "/etc" | absURL }}'>etc.</a>
+        <a class='menu__item {{ if eq .Section "newsletter" }}menu__item__inside{{ end }}' href='{{ "etc/" | absURL }}'>etc.</a>
     </li>
 </ul>

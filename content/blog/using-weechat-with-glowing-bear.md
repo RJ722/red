@@ -70,8 +70,7 @@ After talking to my wonderful host at [insomnia247.nl][insomnia]:
 [coolFire][cF], I came to know that certificates I'm using for my Apache VHost
 should be enough to encrypt my communication (through port 443) and I need not
 start an encrypted relay from weechat. coolFire was also gracious enough to
-throw in some voodoo {% sidenote 'voodoo-id' "of course, by which I mean that I didn't
-understand it" %} and give me a custom URL for running my weechat instance.
+throw in some voodoo and give me a custom URL for running my weechat instance.
 
 Now, let's start a WeeChat relay:
 

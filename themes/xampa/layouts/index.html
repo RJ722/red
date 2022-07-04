@@ -12,7 +12,7 @@
     <div class="about">
       <img src='{{ "images/logo.png" }}' width="50%">
       <div class="newsletter_description">
-        I publish a short and sweet newsletter with links to new articles I write. Consider subscribing:
+        {{ with .Site.GetPage "newsletter/summary.md" }} {{ .Content }} {{ end }}
       </div>
       <div class="subscribe_column_layout">
         <form action="https://rj722.github.io" class="subscribe">

@@ -1,0 +1,1 @@
+Hi, I'm Rahul. I write about programming, design and self-learning. If you like what I'm doing, consider subscribing to my newsletter:

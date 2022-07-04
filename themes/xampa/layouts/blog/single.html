@@ -13,8 +13,8 @@
         {{ end }}
       </div>
       <div class="share">
-      <a href="https://twitter.com/intent/tweet?text={{ .Title }}&url={{ .Permalink }}&via=antisemantic">
-        <div class="share__image"> <img src='{{ "images/share-on-twitter.svg" | relURL }}'> </div>
+      <a href="https://twitter.com/intent/tweet?text={{ .Title }}&url={{ .Permalink }}&via={{ .Site.Params.twitter }}">
+        <div class="share__image"> <img src='{{ "images/share-on-twitter.svg" | absURL }}'> </div>
         <div class="share__text">Share on Twitter</div>
       </a>
       </div>
@@ -23,7 +23,7 @@
     </div>
     <div class="about">
       <div class="t2"> JOIN ME </div>
-      Hi, I'm Rahul. I write about programming, design and self-learning. If you like what I'm doing, consider subscribing to my newsletter:
+      {{ with .Site.GetPage "newsletter/after_post.md" }} {{ .Content }} {{ end }}
       <form action="https://rj722.github.io" class="subscribe">
           <input type="email" spellcheck="false" class="subscribe__email" placeholder="Your best email" />
           <input type="submit" class="subscribe__button" title="Subscribe" value="Subscribe"/>

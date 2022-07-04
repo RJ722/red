@@ -2,7 +2,9 @@
 <div class="home-grid-container">
   <div class="home-grid-left">
     {{ .Content }}
-    <div class="tiny">Updated on {{ .Lastmod.Format "January 2, 2006" }}</div>
+    <div class="tiny">
+      Updated on {{ with .Site.GetPage "_index.md"}} {{ .Lastmod.Format "January 2, 2006" }} {{ end }}
+    </div>
     <h2> Contact </h2>
     {{ with .Site.GetPage "contact/_index.md" }} {{ .Content }} {{ end }}
   </div>

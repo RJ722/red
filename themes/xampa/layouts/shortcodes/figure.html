@@ -1,4 +1,4 @@
-{{- $src := relURL (.Get "src") -}}
+{{- $src := absURL (.Get "src") -}}
 
 <figure {{ with .Get "class" }}class="{{.}}"{{ end }}>
     {{ with .Get "link"}}<a href="{{.}}">{{ end }}

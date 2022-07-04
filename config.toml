@@ -1,5 +1,5 @@
 theme = "xampa"
-baseURL = "https://staging.rj722.tk/"
+baseURL = "https://rj722.github.io/red/"
 title = "Rahul Jha (~RJ722) Blog"
 languageCode = "en-us"
 pygmentsUseClasses = true

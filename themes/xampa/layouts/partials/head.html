@@ -1,9 +1,9 @@
 <head>
     <title> {{ .Title | title }} {{ if (not (eq .Title .Site.Title)) }} | {{ .Site.Title }} {{ end }} </title>
-    <link rel="stylesheet" href='{{ "css/blog.css" | relURL }}'>
-    <link rel="stylesheet" href='{{ "css/syntax.css" | relURL }}'>
+    <link rel="stylesheet" href='{{ "css/blog.css" | absURL }}'>
+    <link rel="stylesheet" href='{{ "css/syntax.css" | absURL }}'>
     {{ if eq .Params.layout "wide" }}
-        <link rel="stylesheet" href='{{ "css/wide.css" | relURL }}'>
+        <link rel="stylesheet" href='{{ "css/wide.css" | absURL }}'>
     {{ end }}
     {{ if .Params.load_mathjax }}
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -12,9 +12,9 @@
         </script>
     {{ end }}
 
-    <link rel="apple-touch-icon" sizes="180x180" href='{{ "/icons/apple-touch-icon.png" | relURL }}'>
-    <link rel="icon" type="image/png" sizes="32x32" href='{{ "/icons/favicon-32x32.png" | relURL }}'>
-    <link rel="icon" type="image/png" sizes="16x16" href='{{ "/icons/favicon-16x16.png" | relURL }}'>
+    <link rel="apple-touch-icon" sizes="180x180" href='{{ "/icons/apple-touch-icon.png" | absURL }}'>
+    <link rel="icon" type="image/png" sizes="32x32" href='{{ "/icons/favicon-32x32.png" | absURL }}'>
+    <link rel="icon" type="image/png" sizes="16x16" href='{{ "/icons/favicon-16x16.png" | absURL }}'>
 
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">

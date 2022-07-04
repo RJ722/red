@@ -1,11 +1,12 @@
 theme = "xampa"
 baseURL = "https://staging.rj722.tk/"
-languageCode = "en-us"
 title = "Rahul Jha (~RJ722) Blog"
-
+languageCode = "en-us"
 pygmentsUseClasses = true
-
 enableGitInfo = true
+
+[params]
+  author = "Rahul Jha"
 
 [markup]
     [markup.goldmark]

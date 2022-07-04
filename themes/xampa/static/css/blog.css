@@ -458,26 +458,17 @@ footer div {
     color: #5E6071 !important;
 }
 
+footer code {
+    background: unset;
+}
+
 footer a{
-    text-decoration: none;
     color: unset;
+    border-bottom: 1px dotted #5E6071;
 }
 
 footer a:visited {
     color: unset;
-}
-
-footer a:hover {
-    color: unset;
-}
-
-.footer__copyright{
-    float: left
-}
-
-.footer__info {
-    display: inline;
-    float: right
 }
 
 .newsletter_description {

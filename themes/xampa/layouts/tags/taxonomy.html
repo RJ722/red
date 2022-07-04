@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="blog-list">
+    <center><h1>Tagged '{{ .Title }}'</h1></center>
+    {{ range .Pages.GroupByDate "2006" }}
+        <h4 class="post-year"> {{ .Key }} </h4>
+        {{ range .Pages }}
+            {{ if not .Params.archived }}
+                <div class="post-box">
+                    <span class="post-date">{{ .Date.Format "Jan 02" }}</span>
+                    <a class="post-title" href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a>
+                </div>
+            {{ end }}
+        {{ end }}
+    {{ end }}
+</div>
+{{ end }}

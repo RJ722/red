@@ -11,3 +11,6 @@ enableGitInfo = true
     [markup.goldmark]
         [markup.goldmark.renderer]
             unsafe = true
+
+[permalinks]
+    tags = "/blog/tags/:slug/"

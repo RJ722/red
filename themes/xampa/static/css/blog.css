@@ -60,12 +60,6 @@
 
 @font-face {
     font-family: 'code';
-    src: url('../fonts/FiraCode-Light.ttf');
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'code';
     src: url('../fonts/FiraCode-Bold.ttf');
     font-weight: bold;
 }

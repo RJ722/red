@@ -95,7 +95,7 @@ certain point, it became his system—at which moment the system was doomed.
 
 Isn't it strange – How we become the very thing we fight against?
 
-{{< figure src="/images/revolution-and-systems/abyss.jpg" title="Gazing into Abyss">}}
+{{< figure src="images/revolution-and-systems/abyss.jpg" title="Gazing into Abyss">}}
 
 {{< quote src="quotes/abyss.md" >}}
 

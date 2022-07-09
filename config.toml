@@ -4,6 +4,7 @@ title = "Rahul Jha (~RJ722) Blog"
 languageCode = "en-us"
 pygmentsUseClasses = true
 enableGitInfo = true
+canonifyURLs = true
 
 [params]
   author = "Rahul Jha"

@@ -203,6 +203,9 @@ blockquote {
     font-style: italic;
     color: #4046DB;
     margin: 1.5em 0 0.75em 0;
+    border-left: 6px solid #4046DB;
+    border-radius: 4px;
+    padding: 0.5em 1em;
 }
 
 blockquote p {
@@ -218,51 +221,48 @@ blockquote p:last-child::after {
     content: "" !important;
 }
 
-.quote {
-    /* opacity: 70%; */
-    padding: 0.5em 1em;
-    border-left: 6px solid #4046DB;
-    /* width: 500px; */
-    border-radius: 4px;
-}
-
-.quote > :not(pre) {
-    word-spacing: 0.1em;
-    letter-spacing: 0.01em;
-}
-
-cite {
+blockquote + p > cite {
     font-style: normal;
     text-align: right;
     display: block;
     font-size: 22px;
-    /* float: right; */
+    margin-top: -22px;
+    padding-right: 10px;
+    color: #4046DB;
 }
 
 cite::before{
     content: "— ";
 }
 
-.quote::before {
+blockquote::before {
     content: "“";
     font-size: 72px;
     font-style: italic;
     opacity: 30%;
     left: -10px;
-    top: 15px;
+    top: 12px;
     position: relative;
+    vertical-align: text-bottom;
+    white-space: nowrap;
 }
 
-.quote::after {
+blockquote::after {
     content: "”";
     font-size: 72px;
     font-style: italic;
     opacity: 30%;
-    top: 15px;
+    top: 29px;
     right: -5px;
     position: relative;
     text-align: right;
     float: right;
+}
+
+.twitter-tweet {
+    font: unset !important;
+    font-family: 'body' !important;
+    font-style: italic !important;
 }
 
 .timestamp {

@@ -5,7 +5,9 @@
 
 <blockquote>
     {{- with .Site.GetPage (.Get "src") }}
-        <div class="quote">{{- .RenderString .Content }}</div>
-        {{- if .Params.cite }}<cite>{{- .RenderString .Params.cite }}</cite>{{- end }}
-    {{- end }}
+      {{- .RenderString .Content }}
 </blockquote>
+      {{- if .Params.cite }}
+         <p><cite>{{- .RenderString .Params.cite }}</cite></p>
+      {{- end }}
+    {{- end }}

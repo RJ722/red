@@ -10,30 +10,21 @@
     font-weight: bold;
 }
 
-@font-face{
-    font-family: 'sans-serif';
-    src: url('../fonts/SourceSansPro-ExtraLight.ttf');
-    font-weight: lighter;
-}
-
 @font-face {
     font-family: 'body';
     src: url('../fonts/CrimsonText-Regular.ttf');
     font-weight: normal;
-    color: #0E0F18;
 }
 @font-face {
     font-family: 'body';
     src: url('../fonts/CrimsonText-Bold.ttf');
     font-weight: bold;
-    color: #0E0F18;
 }
 
 @font-face {
     font-family: 'body';
     src: url('../fonts/CrimsonText-Italic.ttf');
     font-style: italic;
-    color: #0E0F18;
 }
 
 @font-face {
@@ -340,7 +331,6 @@ blockquote::after {
 .timestamp {
     font-family: mono;
     font-style: normal;
-    font-weight: lighter;
     font-size: 13px;
     line-height: 25px;
     letter-spacing: -0.01em;
@@ -375,7 +365,6 @@ blockquote::after {
     display: block;
     font-family: mono;
     font-style: normal;
-    font-weight: lighter;
     font-size: 15px;
     letter-spacing: -0.01em;
     margin-top: 4em;
@@ -525,7 +514,6 @@ footer {
 
 footer div {
     flex-direction: column;
-    font-weight: lighter;
     font-size: 18px;
     color: #5E6071 !important;
 }

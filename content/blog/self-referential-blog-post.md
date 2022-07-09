@@ -2,7 +2,7 @@
 title: "\u0022isn't a title of this post\u0022 isn't a title of this post"
 tags: ["programming", "mathematics"]
 date: 2020-01-20T00:28:48+05:30
-load_mathjax: true
+math: true
 ---
 
 In the early part of the last century, when David Hilbert was working on

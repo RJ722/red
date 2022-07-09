@@ -545,3 +545,7 @@ sup {
 em, strong {
     line-height: 15px; /* calibrated with 1.3em line height. /me shrugs. */
 }
+
+.gist {
+    width: 700px;
+}

@@ -4,6 +4,7 @@ title = "Rahul Jha (~RJ722) Blog"
 languageCode = "en-us"
 pygmentsUseClasses = true
 enableGitInfo = true
+enableEnoji = true
 canonifyURLs = true
 
 [params]
@@ -11,6 +12,8 @@ canonifyURLs = true
   twitter = "antisemantic"
 
 [markup]
+    [markup.highlight]
+        noClasses = true
     [markup.goldmark]
         [markup.goldmark.renderer]
             unsafe = true

@@ -191,22 +191,42 @@ p > code {
     padding: 2px 6px;
     /* match the body font size */
     font-size: 15px;
+    background: ghostwhite !important;
 }
 
 h1 > code {
     display: inline;
+    margin: 2px;
+    padding: 2px 6px;
+    background: ghostwhite !important;
 }
 
 h2 > code {
     display: inline;
+    margin: 2px;
+    padding: 2px 6px;
+    background: ghostwhite !important;
 }
 
 h3 > code {
     display: inline;
+    margin: 2px;
+    padding: 2px 6px;
+    background: ghostwhite !important;
 }
 
 h4 > code {
     display: inline;
+    margin: 2px;
+    padding: 2px 6px;
+    background: ghostwhite !important;
+}
+
+li > code {
+    display: inline;
+    margin: 2px;
+    padding: 2px 6px;
+    background: ghostwhite !important;
 }
 
 .highlight {

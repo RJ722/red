@@ -15,10 +15,17 @@
         {{ with .Site.GetPage "newsletter/summary.md" }} {{ .Content }} {{ end }}
       </div>
       <div class="subscribe_column_layout">
-        <form action="https://rj722.github.io" class="subscribe">
-            <input type="email" spellcheck="false" class="subscribe__email" placeholder="Your best email" />
+        <form
+	  action="https://tinyletter.com/RJ722"
+	  method="post"
+	  target="popupwindow"
+	  onsubmit="window.open('https://tinyletter.com/RJ722', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
+	  class="subscribe"
+	>
+          <input type="email" name="email" id="tlemail" spellcheck="false" class="subscribe__email" placeholder="Your best email" />
             <newline></newline>
-            <input type="submit" class="subscribe__button" title="Subscribe" value="Subscribe"/>
+	  <input type="hidden" value="1" name="embed" />
+          <input type="submit" class="subscribe__button" title="Subscribe" value="Subscribe"/>
         </form>
       </div>
       <!-- <div class="tiny" style="margin-top: -1em;">No Ads. No Spam.</div> -->

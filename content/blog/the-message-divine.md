@@ -24,5 +24,5 @@ It's a message from the divine <br>
 To love, to hug and to kiss more often <br>
 I've fallen so far behind <br>
 <br>
-— Yours Truly! (picture credit to <a href="">@karan</a>)
+— Yours Truly! (picture credit to <a href="https://www.instagram.com/karansthr/">@karan</a>)
 </p>

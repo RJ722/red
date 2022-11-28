@@ -2,6 +2,6 @@
 title: "Contact"
 ---
 
-Feel free to reach out, if you'd like to chat. here's my [email](contact@rj722.com) and [GPG](/gpg) or find me on IRC (RJ722 on freenode).
+Feel free to reach out, if you'd like to chat. here's my [email](rj722@pm.me) and [GPG](/gpg) or find me on IRC (RJ722 on Libra).
 
-You can also connect with me on [Twitter]() and [LinkedIn]().
+You can also connect with me on [Twitter](https://twitter.com/antisemantic) and [LinkedIn](https://linkedin.com/in/rj722).

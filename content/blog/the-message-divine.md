@@ -1,5 +1,5 @@
 ---
-title: "Love Often!"
+title: "A message from the divine"
 date: 2022-11-29T02:39:10+05:30
 draft: false
 tags: ["poetry", "photograph"]

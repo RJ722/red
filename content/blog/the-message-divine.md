@@ -12,7 +12,7 @@ tags: ["poetry", "photograph"]
 <p style="text-align: center !important; font-style: italic;">
 I had chills down my spine <br>
 You see, I was just about to kiss her <br>
-After I had had a sipe of my wine <br>
+After I had had a sip of my wine <br>
 But the morning breeze woke me up <br>
 Somebody left open the window blind <br>
 I feel I've fallen in love <br>

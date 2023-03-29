@@ -5,7 +5,7 @@ layout: "wide"
 
 # Hey there, I'm Rahul.
 
-I currently work as software engineer at [Airbase](https://airbase.com).
+I am a software engineer, currently working at [Airbase](https://airbase.com).
 
 I help maintain [Vulture](https://github.com/jendrikseipp/vulture) – a tool to scavenge dead Python code, and contribute to other open source projects.
 

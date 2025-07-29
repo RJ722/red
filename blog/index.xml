@@ -1,25 +1,130 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on Rahul Jha (~RJ722) Blog</title><link>https://rj722.com/blog/</link><description>Recent content in Blogs on Rahul Jha (~RJ722) Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 29 Nov 2022 02:39:10 +0530</lastBuildDate><atom:link href="https://rj722.com/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>A message from the divine</title><link>https://rj722.com/blog/the-message-divine/</link><pubDate>Tue, 29 Nov 2022 02:39:10 +0530</pubDate><guid>https://rj722.com/blog/the-message-divine/</guid><description>I had chills down my spine You see, I was just about to kiss her After I had had a sip of my wine But the morning breeze woke me up Somebody left open the window blind I feel I've fallen in love As I feast now on the brilliance of ripe sunshine Embracing me with its comforting warmth Takes me back to the good ol' time Past the heartbreaks.</description></item><item><title>My talk at PyCon Italy</title><link>https://rj722.com/blog/pycon-italy/</link><pubDate>Wed, 06 Jul 2022 16:59:17 +0530</pubDate><guid>https://rj722.com/blog/pycon-italy/</guid><description>I&amp;rsquo;ve been giving a talk on Vulture for almost half a decade now. It takes me new places, and teaches me new things, and I quite like it. This time, it was even more special &amp;ndash; it was in Italy. And rather than focussing on Vulture specifically, I wanted to spend more time on automated code analysis in general.
-I also wanted to have a nice ice-breaker to loosen up the awkwardness which is generally present in technical conferences.</description></item><item><title>"isn't a title of this post" isn't a title of this post</title><link>https://rj722.com/blog/self-referential-blog-post/</link><pubDate>Mon, 20 Jan 2020 00:28:48 +0530</pubDate><guid>https://rj722.com/blog/self-referential-blog-post/</guid><description>In the early part of the last century, when David Hilbert was working on stricter formalization of geometry than Euclid, Georg Cantor had worked out a theory of different types of infinities, the theory of sets. This theory would soon unveil a series of confusing paradoxes, leading to a crisis in the Mathematics community regarding the stability of the foundational principles of the math of that time.
-Central to these paradoxes was the Russell&amp;rsquo;s paradox (or more generally, as we&amp;rsquo;d talk about later, the Epimenides Paradox).</description></item><item><title>A panegyric about my mentor, Omar Bhai</title><link>https://rj722.com/blog/panegyric-omar-bhai/</link><pubDate>Wed, 25 Sep 2019 00:28:48 +0530</pubDate><guid>https://rj722.com/blog/panegyric-omar-bhai/</guid><description>I was still up at this unearthly hour, thinking about life for a while now - fumbled thoughts about where I had come, where I started, and quite expectedly, Omar Bhai, your name popped in.
-The stream continued. I started thinking about everything I&amp;rsquo;ve learned from you and was surprised with merely the sheer volume of thoughts that followed. I felt nostalgic!
-I made a mental note to type this out the next day.</description></item><item><title>The [deceptive] power of visual explanation</title><link>https://rj722.com/blog/visual-explanation/</link><pubDate>Mon, 22 Jul 2019 00:28:48 +0530</pubDate><guid>https://rj722.com/blog/visual-explanation/</guid><description>Quite recently, I came across Jay Alammar&amp;rsquo;s beautiful blog post, &amp;ldquo;A Visual Intro to NumPy &amp;amp; Data Representation&amp;rdquo;.
-Before reading this, whenever I had to think about an array:
-In [1]: import numpy as np In [2]: data = np.array([1, 2, 3]) In [3]: data Out[3]: array([1, 2, 3]) I used to create a mental picture somewhat like this:
-┌────┬────┬────┐ data = │ 1 │ 2 │ 3 │ └────┴────┴────┘ But Jay, on the other hand, uses a vertical stack for representing the same array.</description></item><item><title>My Experience with OBM</title><link>https://rj722.com/blog/experience-with-obm/</link><pubDate>Fri, 19 Jul 2019 00:28:48 +0530</pubDate><guid>https://rj722.com/blog/experience-with-obm/</guid><description>If you want an overview about OBM, please read my post on the same.
-I&amp;rsquo;ve participated in three sprints until now, in which I&amp;rsquo;ve completely failed myself, but I&amp;rsquo;ve already experiencing a drastic changes in my habits, which is good.
-Here is what I&amp;rsquo;ve learned from this short, but significant experience:
-First and foremost, the structure of OBM forces you to formalize things. You need to setup goals for yourself. Even better is that the setup makes it very difficult to be vague.</description></item><item><title>Operation Blue Moon</title><link>https://rj722.com/blog/obm/</link><pubDate>Fri, 12 Jul 2019 00:28:48 +0530</pubDate><guid>https://rj722.com/blog/obm/</guid><description>It&amp;rsquo;s been a couple of years since I read &amp;ldquo;i want 2 do project tell me wat 2 do&amp;rdquo;, which then landed me on the home page of Operation Blue Moon (OBM), a project run single-handedly by the author of the book - Shakthi Kannan (mbuf). It is aimed towards time management and getting things done.
-The project not only borrows it&amp;rsquo;s name, but also the spirit of discipline, from our miliary counterparts.</description></item><item><title>Using Weechat with Glowing Bear for IRC</title><link>https://rj722.com/blog/using-weechat-with-glowing-bear/</link><pubDate>Tue, 02 Jul 2019 00:28:48 +0530</pubDate><guid>https://rj722.com/blog/using-weechat-with-glowing-bear/</guid><description>Last month, I had a new addition to my toolbox - Glowing Bear, which has been a really nice improvement, allowing me to access Weechat (hosted on a server) through my browser. Here&amp;rsquo;s how I set it up.
-But, before we begin - the curious folks might ask, &amp;ldquo;What had you been using all this time?&amp;rdquo;
-Previously, I could directly ssh1 into my server, and attach to a screen session which ran weechat, using the command:</description></item><item><title>Silk Road, Revolutions and Systems</title><link>https://rj722.com/blog/revolution-and-systems/</link><pubDate>Sun, 26 May 2019 00:28:48 +0530</pubDate><guid>https://rj722.com/blog/revolution-and-systems/</guid><description>&lt;p>Today, I read the &lt;a href="https://www.wired.com/2015/04/silk-road-1/">story of Silk Road&lt;/a> about how a particular young
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on Rahul Jha (~RJ722) Blog</title><link>https://rj722.com/blog/</link><description>Recent content in Blogs on Rahul Jha (~RJ722) Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 29 Nov 2022 14:47:15 +0530</lastBuildDate><atom:link href="https://rj722.com/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>A message from the divine</title><link>https://rj722.com/blog/the-message-divine/</link><pubDate>Tue, 29 Nov 2022 02:39:10 +0530</pubDate><guid>https://rj722.com/blog/the-message-divine/</guid><description>&lt;div width="100%">
+&lt;figure >
+ 
+ &lt;img src='https://media2.giphy.com/media/Cxo37VSa9p1D88xeTo/giphy.gif?cid=790b7611cb9936e80420f529c63c5e9ecbacccdcc96dfb37&amp;amp;rid=giphy.gif&amp;amp;ct=g' />
+ 
+ 
+&lt;/figure>
+
+&lt;/div>
+&lt;p style="text-align: center !important; font-style: italic;">
+I had chills down my spine &lt;br>
+You see, I was just about to kiss her &lt;br>
+After I had had a sip of my wine &lt;br>
+But the morning breeze woke me up &lt;br>
+Somebody left open the window blind &lt;br>
+I feel I've fallen in love &lt;br>
+As I feast now on the brilliance of ripe sunshine &lt;br>
+Embracing me with its comforting warmth &lt;br>
+Takes me back to the good ol' time &lt;br>
+Past the heartbreaks. Past the ugly banter &lt;br>
+It's a message from the divine &lt;br>
+To love, to hug and to kiss more often &lt;br>
+I've fallen so far behind &lt;br>
+&lt;br>
+— Yours Truly! (picture credit to &lt;a href="https://www.instagram.com/karansthr/">@karan&lt;/a>)
+&lt;/p></description></item><item><title>My talk at PyCon Italy</title><link>https://rj722.com/blog/pycon-italy/</link><pubDate>Wed, 06 Jul 2022 16:59:17 +0530</pubDate><guid>https://rj722.com/blog/pycon-italy/</guid><description>&lt;p>I&amp;rsquo;ve been giving a talk on &lt;a href="https://github.com/jendrikseipp/vulture">Vulture&lt;/a> for almost half a decade now. It takes me
+new places, and teaches me new things, and I quite like it. This time, it was
+even more special &amp;ndash; it was in Italy. And rather than focussing on Vulture
+specifically, I wanted to spend more time on automated code analysis in
+general.&lt;/p>
+&lt;p>I also wanted to have a nice ice-breaker to loosen up the awkwardness which is
+generally present in technical conferences. And since we were in Italy, why not
+Football?&lt;/p></description></item><item><title>"isn't a title of this post" isn't a title of this post</title><link>https://rj722.com/blog/self-referential-blog-post/</link><pubDate>Mon, 20 Jan 2020 00:28:48 +0530</pubDate><guid>https://rj722.com/blog/self-referential-blog-post/</guid><description>&lt;p>In the early part of the last century, when David Hilbert was working on
+stricter formalization of geometry than Euclid, Georg Cantor had worked out a
+theory of different types of infinities, &lt;em>the theory of sets&lt;/em>. This
+theory would soon unveil a series of confusing paradoxes, leading to &lt;a
+href="https://en.wikipedia.org/wiki/Foundations_of_mathematics#Foundational_crisis">
+a crisis in the Mathematics community &lt;/a> regarding the stability of the
+foundational principles of the math of that time.&lt;/p>
+&lt;p>Central to these paradoxes was the &lt;em>Russell&amp;rsquo;s paradox&lt;/em> (or more generally, as
+we&amp;rsquo;d talk about later, the &lt;em>Epimenides Paradox&lt;/em>). Let&amp;rsquo;s see what it is.&lt;/p></description></item><item><title>A panegyric about my mentor, Omar Bhai</title><link>https://rj722.com/blog/panegyric-omar-bhai/</link><pubDate>Wed, 25 Sep 2019 00:28:48 +0530</pubDate><guid>https://rj722.com/blog/panegyric-omar-bhai/</guid><description>&lt;p>I was still up at this unearthly hour, thinking about life for a while now - fumbled thoughts about where I had come, where I started, and quite expectedly, Omar Bhai, your name popped in.&lt;/p>
+&lt;p>The stream continued. I started thinking about everything I&amp;rsquo;ve learned from you and was surprised with merely the sheer volume of thoughts that followed. I felt nostalgic!&lt;/p>
+&lt;p>I made a mental note to type this out the next day.&lt;/p></description></item><item><title>The [deceptive] power of visual explanation</title><link>https://rj722.com/blog/visual-explanation/</link><pubDate>Mon, 22 Jul 2019 00:28:48 +0530</pubDate><guid>https://rj722.com/blog/visual-explanation/</guid><description>&lt;p>Quite recently, I came across Jay Alammar&amp;rsquo;s beautiful blog post, &lt;a href="https://jalammar.github.io/visual-numpy/">&amp;ldquo;A
+Visual Intro to NumPy &amp;amp; Data Representation&amp;rdquo;&lt;/a>.&lt;/p>
+&lt;p>Before reading this, whenever I had to think about an array:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">In&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">]:&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="nn">numpy&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="nn">np&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">In&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">]:&lt;/span> &lt;span class="n">data&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">np&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">array&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">3&lt;/span>&lt;span class="p">])&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">In&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="p">]:&lt;/span> &lt;span class="n">data&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">Out&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="p">]:&lt;/span> &lt;span class="n">array&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">3&lt;/span>&lt;span class="p">])&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>I used to create a mental picture somewhat like this:&lt;/p>
+&lt;pre tabindex="0">&lt;code> ┌────┬────┬────┐
+data = │ 1 │ 2 │ 3 │
+ └────┴────┴────┘
+&lt;/code>&lt;/pre>&lt;p>But Jay, on the other hand, uses a vertical stack for representing the same array.&lt;/p></description></item><item><title>My Experience with OBM</title><link>https://rj722.com/blog/experience-with-obm/</link><pubDate>Fri, 19 Jul 2019 00:28:48 +0530</pubDate><guid>https://rj722.com/blog/experience-with-obm/</guid><description>&lt;p>If you want an overview about OBM, please &lt;a href="https://rj722.com/blog/obm/">read my post on the same&lt;/a>.&lt;/p>
+&lt;p>I&amp;rsquo;ve participated in three sprints until now, in which I&amp;rsquo;ve completely failed
+myself, but I&amp;rsquo;ve already experiencing a drastic changes in my habits, which is
+good.&lt;/p>
+&lt;p>Here is what I&amp;rsquo;ve learned from this short, but significant experience:&lt;/p>
+&lt;p>First and foremost, the structure of OBM forces you to formalize things. You
+need to setup goals for yourself. Even better is that the setup makes it very
+difficult to be vague. You&amp;rsquo;ve to setup smaller tasks you need to achieve in
+order to complete the goal. The research, which is required for listing these
+tasks (thus, providing you with a big picture), getting a correct estimate of
+time required, helps you plan efficiently.&lt;/p></description></item><item><title>Operation Blue Moon</title><link>https://rj722.com/blog/obm/</link><pubDate>Fri, 12 Jul 2019 00:28:48 +0530</pubDate><guid>https://rj722.com/blog/obm/</guid><description>&lt;p>It&amp;rsquo;s been a couple of years since I read &lt;a href="http://www.shakthimaan.com/what-to-do.html">&amp;ldquo;i want 2 do project tell me wat 2
+do&amp;rdquo;&lt;/a>, which then landed me on the home page of &lt;a href="https://gitlab.com/shakthimaan/operation-blue-moon/">Operation Blue Moon
+(OBM)&lt;/a>, a project run single-handedly by the author of the book - &lt;a href="http://shakthimaan.com/">Shakthi
+Kannan (mbuf)&lt;/a>. It is aimed towards time management and getting things
+done.&lt;/p>
+&lt;p>The project not only borrows it&amp;rsquo;s name, but also the spirit of discipline, from
+our miliary counterparts. The practices here, built upon Shakthi&amp;rsquo;s years of
+experience of dealing with people trying, and failing, and learning from their
+mistakes, regarding time management.&lt;/p></description></item><item><title>Using Weechat with Glowing Bear for IRC</title><link>https://rj722.com/blog/using-weechat-with-glowing-bear/</link><pubDate>Tue, 02 Jul 2019 00:28:48 +0530</pubDate><guid>https://rj722.com/blog/using-weechat-with-glowing-bear/</guid><description>&lt;p>Last month, I had a new addition to my toolbox - &lt;a href="https://www.glowing-bear.org/#!/">Glowing
+Bear&lt;/a>, which has been a really nice improvement, allowing me to access
+Weechat (hosted on a server) through my browser. Here&amp;rsquo;s how I set it up.&lt;/p>
+&lt;p>But, before we begin - the curious folks might ask, &amp;ldquo;What had you been using
+all this time?&amp;rdquo;&lt;/p>
+&lt;p>Previously, I could directly ssh&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> into my server, and attach to a
+&lt;a href="https://www.gnu.org/software/screen/">&lt;code>screen&lt;/code>&lt;/a> session which ran weechat, using the command:&lt;/p></description></item><item><title>Silk Road, Revolutions and Systems</title><link>https://rj722.com/blog/revolution-and-systems/</link><pubDate>Sun, 26 May 2019 00:28:48 +0530</pubDate><guid>https://rj722.com/blog/revolution-and-systems/</guid><description>&lt;p>Today, I read the &lt;a href="https://www.wired.com/2015/04/silk-road-1/">story of Silk Road&lt;/a> about how a particular young
 idealist Ross Ulbricht, tired of chasing success the old school way, found his
 way around the darkweb&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> to create an online bazaar for the trading of illicit
 materials, mainly drugs, which he named Silk Road.&lt;/p>
 &lt;p>The aim behind writing this blog post is to think out loud and try to gain
 insight into the oversights made by some of the most prominent revolutionaries
-in history.&lt;/p></description></item><item><title>Freedom of Speech, Authoritarianism, Freedom of Press and Faiz</title><link>https://rj722.com/blog/freedom-of-speech/</link><pubDate>Wed, 22 May 2019 00:28:48 +0530</pubDate><guid>https://rj722.com/blog/freedom-of-speech/</guid><description>Right to Free Speech is essential for a democracy. This blog post aims to shed some light on the recent authoritarian attempts made by hindutva-right-wing to curb free speech and how can we fight back.
-&amp;ldquo;India&amp;rsquo;s Divider in chief&amp;rdquo; TIME magazine, in it&amp;rsquo;s May 20 edition, featured the Prime Minister of India, Mr. Narendra Damodardas Modi on it&amp;rsquo;s cover page
-India&amp;#39;s Divider in Chief
-The article opens with the sentence:</description></item><item><title>A glimpse into the darkness: the 'Brutish' rule in India</title><link>https://rj722.com/blog/a-glimpse-into-the-darkness/</link><pubDate>Sun, 19 May 2019 00:28:48 +0530</pubDate><guid>https://rj722.com/blog/a-glimpse-into-the-darkness/</guid><description>A second-generation freeborn attempts to understand the impact and aftermath of colonization of India by British. It turns out that even an educated Indian of today is still not aware of the atrocities and turmoil it caused the country.
-India - the golden bird of medieval times, known for it&amp;rsquo;s riches - the diamonds and the muslins, one of the world&amp;rsquo;s greatest exporter of silk - a country sharing a cut of more than 27% in the world&amp;rsquo;s economy during the sixteenth century - the country which was then capitalized for 200 years all the while feeding to the interests of Britain, leaving the post-British India with a crumbling share of a little more than 3% in the world GDP.</description></item><item><title>GSoC Project</title><link>https://rj722.com/blog/gsoc_project/</link><pubDate>Sun, 28 May 2017 00:28:48 +0530</pubDate><guid>https://rj722.com/blog/gsoc_project/</guid><description>Overview The motivation, here, is to extend the functionality of vulture as a library, and to pass on all metadata through the API and then to harness this utility in VultureBear for auto removing dead code, which would greatly optimise the bear. The second part of this project focuses on offering the source range of the dead code which would make auto-removal much easier. As of now, vulture only supplies the beginning of the dead code.</description></item><item><title>GSoC Project Timeline</title><link>https://rj722.com/blog/project-timeline/</link><pubDate>Sun, 28 May 2017 00:28:48 +0530</pubDate><guid>https://rj722.com/blog/project-timeline/</guid><description>Here is a description of how I plan to manage my schedule during GSoC period.
-Project Overview Presently, we have coala - an automatic code linter and vulture - dead code reporter. Amongst coala&amp;rsquo;s fundamental code checkers known as Bears, there is a VultureBear which runs vulture over the input batch of files and prepares a patch for the respective files. The project proposal focuses on improving the VultureBear and making vulture available as a library rather than as command line tool.</description></item></channel></rss>
+in history.&lt;/p></description></item><item><title>Freedom of Speech, Authoritarianism, Freedom of Press and Faiz</title><link>https://rj722.com/blog/freedom-of-speech/</link><pubDate>Wed, 22 May 2019 00:28:48 +0530</pubDate><guid>https://rj722.com/blog/freedom-of-speech/</guid><description>&lt;p>Right to Free Speech is essential for a democracy. This blog post aims to shed
+some light on the recent authoritarian attempts made by hindutva-right-wing to
+curb free speech and how can we fight back.&lt;/p>
+&lt;h3 id="heading">&lt;em>&amp;ldquo;India&amp;rsquo;s Divider in chief&amp;rdquo;&lt;/em>&lt;/h3>
+&lt;p>TIME magazine, in it&amp;rsquo;s May 20 edition, featured the Prime Minister of India, Mr.
+Narendra Damodardas &lt;a href="https://indianexpress.com/article/india/indias-divider-in-chief-pm-modi-features-on-time-magazine-cover-5720637/">Modi on it&amp;rsquo;s cover page&lt;/a>&lt;/p>
+&lt;figure >
+ 
+ &lt;img src='https://i.imgur.com/necOF1d.jpg' />
+ 
+ 
+ &lt;figcaption>
+ &lt;div class="figcaption">&lt;p>India&amp;#39;s Divider in Chief&lt;/p>&lt;/div>
+ 
+ &lt;/figcaption>
+ 
+&lt;/figure>
+
+&lt;p>The article opens with the sentence:&lt;/p></description></item><item><title>A glimpse into the darkness: the 'Brutish' rule in India</title><link>https://rj722.com/blog/a-glimpse-into-the-darkness/</link><pubDate>Sun, 19 May 2019 00:28:48 +0530</pubDate><guid>https://rj722.com/blog/a-glimpse-into-the-darkness/</guid><description>&lt;p>A second-generation freeborn attempts to understand the impact and aftermath of
+colonization of India by British. It turns out that even an educated Indian of
+today is still not aware of the atrocities and turmoil it caused the country.&lt;/p>
+&lt;p>India - the golden bird of medieval times, known for it&amp;rsquo;s riches - the diamonds
+and the muslins, one of the world&amp;rsquo;s greatest exporter of silk - a country
+sharing a cut of more than 27% in the world&amp;rsquo;s economy during the sixteenth
+century - the country which was then capitalized for 200 years all the while
+feeding to the interests of Britain, leaving the post-British India with a
+crumbling share of a little more than 3% in the world GDP.&lt;/p></description></item><item><title>GSoC Project</title><link>https://rj722.com/blog/gsoc_project/</link><pubDate>Sun, 28 May 2017 00:28:48 +0530</pubDate><guid>https://rj722.com/blog/gsoc_project/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>The motivation, here, is to extend the functionality of vulture as a library,
+and to pass on all metadata through the API and then to harness this utility in
+VultureBear for auto removing dead code, which would greatly optimise the bear.
+The second part of this project focuses on offering the source range of the dead
+code which would make auto-removal much easier. As of now, vulture only supplies
+the beginning of the dead code. Also, it proposes to enhance vulture in order to
+detect unreachable code (like &lt;code>if False&lt;/code>, &lt;code>if True else&lt;/code>, any code written after
+return statements, etc). - this shall help the user in trimming down their
+codebase without affecting usability. Also, the third part would be to implement
+a confidence value for every result, this shall be helpful when tackling false
+positives.&lt;/p></description></item><item><title>GSoC Project Timeline</title><link>https://rj722.com/blog/project-timeline/</link><pubDate>Sun, 28 May 2017 00:28:48 +0530</pubDate><guid>https://rj722.com/blog/project-timeline/</guid><description>&lt;p>Here is a description of how I plan to manage my schedule during GSoC period.&lt;/p>
+&lt;h2 id="project-overview">Project Overview&lt;/h2>
+&lt;p>Presently, we have coala - an automatic code linter and vulture - dead code
+reporter. Amongst coala&amp;rsquo;s fundamental &lt;code>code checkers&lt;/code> known as &lt;code>Bears&lt;/code>, there is
+a &lt;code>VultureBear&lt;/code> which runs vulture over the input batch of files and prepares a
+patch for the respective files. The project proposal focuses on improving the
+VultureBear and making vulture available as a library rather than as command
+line tool.&lt;/p></description></item></channel></rss>

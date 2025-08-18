@@ -12,3 +12,5 @@ I help maintain [Vulture](https://github.com/jendrikseipp/vulture) – a tool to
 I write a newsletter, [etcetra]({{< relref "/blog" >}}), with articles on learning, technology, and design.
 
 <!-- In case you’re wondering about what I’m upto currently, you can read my [now]({{< relref "/blog" >}}) page. -->
+
+<!-- "If you're looking to hire me, you can read about my [career]({{ relref "/career" }})." -->
